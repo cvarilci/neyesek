@@ -1,0 +1,22 @@
+# Ortam ve sırlar
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Django
+db.sqlite3
+staticfiles/
+media/
+
+# Editör / işletim sistemi
+.DS_Store
+.vscode/
+.idea/
+
+# Claude Code oturum verisi
+.claude/
