@@ -182,15 +182,15 @@ Bittiğinde kabul kriterlerini tek tek dene ve sonucu yaz. Commit'le ve push et 
 **Amaç:** Arayüzü `CLAUDE.md` içindeki tasarım diline göre sıcak, canlı ve temiz hale getirmek.
 
 ### Görevler
-- [ ] `base.html`: üst çubuk (logo "Neyesek 🍲", alışveriş listesi ikonu ve sayaç rozeti), alt bilgi
-- [ ] Ana sayfa karşılama alanı: "Bu akşam ne pişirsek?" başlığı, samimi alt metin, yumuşak renk geçişli arka plan dekoru
-- [ ] Malzeme chip'leri: grup renkleriyle hafif tonlanmış, "×" ile kaldırma, ekleme anında küçük animasyon
-- [ ] Tarif kartları: büyük emoji, başlık, süre rozeti (⏱ 20 dk), kategori, "Hemen yapabilirsin" için nane rozeti, eksikler için şeftali rozeti
-- [ ] Tarif detayı: iki sütun (masaüstü) veya tek sütun (mobil); malzemelerde ✓ ve eksik işaretleri, numaralı adımlar, alerjen rozetleri
-- [ ] Alışveriş listesi: işaretlenince üstü çizilen öğeler, "Kopyala" butonu (listeyi WhatsApp'a yapıştırmak için düz metin)
-- [ ] Boş durum ekranları, yükleniyor göstergesi, 404 sayfası
-- [ ] Erişilebilirlik: `label` etiketleri, odak halkaları, `aria-live` ile otomatik tamamlama duyurusu, `prefers-reduced-motion` desteği
-- [ ] Favicon (emoji tabanlı SVG) ve `<meta>` açıklama etiketleri
+- [x] `base.html`: üst çubuk (logo "Neyesek 🍲", alışveriş listesi ikonu ve sayaç rozeti), alt bilgi
+- [x] Ana sayfa karşılama alanı: "Bu akşam ne pişirsek?" başlığı, samimi alt metin, yumuşak renk geçişli arka plan dekoru
+- [x] Malzeme chip'leri: grup renkleriyle hafif tonlanmış, "×" ile kaldırma, ekleme anında küçük animasyon
+- [x] Tarif kartları: büyük emoji, başlık, süre rozeti (⏱ 20 dk), kategori, "Hemen yapabilirsin" için nane rozeti, eksikler için şeftali rozeti
+- [x] Tarif detayı: iki sütun (masaüstü) veya tek sütun (mobil); malzemelerde ✓ ve eksik işaretleri, numaralı adımlar, alerjen rozetleri
+- [x] Alışveriş listesi: işaretlenince üstü çizilen öğeler, "Kopyala" butonu (listeyi WhatsApp'a yapıştırmak için düz metin)
+- [x] Boş durum ekranları, yükleniyor göstergesi, 404 sayfası
+- [x] Erişilebilirlik: `label` etiketleri, odak halkaları, `aria-live` ile otomatik tamamlama duyurusu, `prefers-reduced-motion` desteği
+- [x] Favicon (emoji tabanlı SVG) ve `<meta>` açıklama etiketleri
 
 ### Kabul kriterleri
 - 375px, 768px ve 1280px genişliklerde yatay kaydırma olmadan düzgün görünüyor.

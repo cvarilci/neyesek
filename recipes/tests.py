@@ -485,3 +485,11 @@ class ViewTests(TestCase):
         response = self.client.get(reverse("recipes:home"))
         self.assertEqual(response.status_code, 200)
         self.assertNotContains(response, ">Tuz<")
+
+    def test_custom_404_page_used_in_production_mode(self):
+        from django.test import override_settings
+
+        with override_settings(DEBUG=False, ALLOWED_HOSTS=["testserver"]):
+            response = self.client.get("/bu-sayfa-hic-yok/")
+        self.assertEqual(response.status_code, 404)
+        self.assertContains(response, "Bu sayfa pişmemiş", status_code=404)

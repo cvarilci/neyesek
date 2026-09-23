@@ -67,6 +67,7 @@
     if (!searchInput || !chipList || !showRecipesBtn) return;
 
     var searchResults = document.getElementById("search-results");
+    var searchStatus = document.getElementById("search-status");
     var emptyHint = document.getElementById("empty-selection-hint");
     var debounceTimer = null;
     var activeIndex = -1;
@@ -136,7 +137,12 @@
 
       if (results.length === 0) {
         searchResults.hidden = true;
+        if (searchStatus) searchStatus.textContent = "Sonuç bulunamadı.";
         return;
+      }
+
+      if (searchStatus) {
+        searchStatus.textContent = results.length + " sonuç bulundu.";
       }
 
       results.forEach(function (ingredient, index) {
@@ -178,8 +184,10 @@
       window.clearTimeout(debounceTimer);
       if (!query) {
         closeResults();
+        if (searchStatus) searchStatus.textContent = "";
         return;
       }
+      if (searchStatus) searchStatus.textContent = "Aranıyor...";
       debounceTimer = window.setTimeout(function () {
         fetch("/api/malzemeler/?q=" + encodeURIComponent(query))
           .then(function (response) {
@@ -190,6 +198,7 @@
           })
           .catch(function () {
             closeResults();
+            if (searchStatus) searchStatus.textContent = "Arama sırasında bir sorun oluştu.";
           });
       }, 250);
     });

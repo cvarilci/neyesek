@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Sayfa bulunamadı — Neyesek{% endblock %}
+
+{% block content %}
+<section class="error-page">
+    <p class="error-page__emoji">🍳</p>
+    <h1>Bu sayfa pişmemiş</h1>
+    <p>Aradığın sayfayı bulamadık. Belki bağlantı eskimiştir ya da adres yanlış yazılmıştır.</p>
+    <a class="btn-primary" href="{% url 'recipes:home' %}">Ana sayfaya dön</a>
+</section>
+{% endblock %}

@@ -5,12 +5,18 @@
   --primary:       #FF6B6B;
   --primary-dark:  #D94452;
   --accent:        #E84A8A;
+  --accent-soft:   #FCE4F0;
   --peach:         #FFB88C;
+  --peach-soft:    #FFF1E6;
+  --peach-dark:    #7A3D15;
   --mint:          #3DBFB4;
   --mint-soft:     #E3F7F5;
+  --mint-dark:     #186059;
   --text:          #2D2A32;
   --text-muted:    #6E6873;
   --border:        #F1E4DF;
+  --on-dark:       #FFFFFF;
+  --overlay-hover: rgba(45, 42, 50, 0.08);
   --radius:        16px;
   --shadow:        0 4px 16px rgba(217, 68, 82, 0.08);
   --font-main: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -20,6 +26,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -27,6 +37,7 @@ body {
   font-family: var(--font-main);
   font-weight: 400;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -35,7 +46,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: var(--primary-dark);
+  color: var(--text);
 }
 
 .site-header {
@@ -80,6 +91,45 @@ a {
   color: var(--text-muted);
 }
 
+/* ---- Erişilebilirlik ---- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 8px;
+  background: var(--primary-dark);
+  color: var(--on-dark);
+  padding: 10px 16px;
+  border-radius: 0 0 var(--radius) var(--radius);
+  z-index: 100;
+  transition: top 0.15s ease-out;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* ---- Üst bar ---- */
 
 .site-header {
@@ -97,8 +147,8 @@ a {
 }
 
 .badge {
-  background: var(--primary);
-  color: #fff;
+  background: var(--mint-dark);
+  color: var(--on-dark);
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 700;
@@ -113,11 +163,11 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 44px;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: var(--radius);
   font-family: var(--font-main);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -125,7 +175,7 @@ a {
 
 .btn-primary {
   background: var(--primary-dark);
-  color: #fff;
+  color: var(--on-dark);
   box-shadow: var(--shadow);
 }
 
@@ -155,7 +205,10 @@ input:focus-visible {
 
 .hero {
   text-align: center;
-  margin-bottom: 24px;
+  margin: -24px -20px 24px;
+  padding: 40px 20px 32px;
+  background: radial-gradient(circle at 20% 0%, var(--surface-tint) 0%, var(--bg) 55%),
+              radial-gradient(circle at 85% 15%, var(--mint-soft) 0%, transparent 45%);
 }
 
 .hero p {
@@ -187,6 +240,10 @@ input:focus-visible {
   font-size: 1rem;
   background: var(--surface);
   color: var(--text);
+}
+
+.search-status {
+  min-height: 1.2em;
 }
 
 .search-results {
@@ -231,12 +288,29 @@ input:focus-visible {
 .chip {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background: var(--mint-soft);
   color: var(--text);
   border-radius: 999px;
-  padding: 6px 8px 6px 14px;
+  padding: 4px 4px 4px 14px;
   font-weight: 600;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .chip {
+    animation: chip-pop 0.2s ease-out;
+  }
+}
+
+@keyframes chip-pop {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .chip__remove {
@@ -246,13 +320,13 @@ input:focus-visible {
   font-size: 1.1rem;
   line-height: 1;
   cursor: pointer;
-  width: 28px;
-  height: 28px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
 }
 
 .chip__remove:hover {
-  background: rgba(0, 0, 0, 0.08);
+  background: var(--overlay-hover);
 }
 
 .ingredient-group {
@@ -283,10 +357,21 @@ input:focus-visible {
   cursor: pointer;
 }
 
-.chip-option--selected {
+/* Malzeme grubuna göre hafif renk tonlama (seçim durumu bunu ezer, bkz. aşağı) */
+.chip-option[data-group="sebze"] { background: var(--mint-soft); }
+.chip-option[data-group="meyve"] { background: var(--peach-soft); }
+.chip-option[data-group="et-tavuk-balk"] { background: var(--accent-soft); }
+.chip-option[data-group="sut-urunleri"] { background: var(--surface-tint); }
+.chip-option[data-group="bakliyat"] { background: var(--mint-soft); }
+.chip-option[data-group="tahl-hamur"] { background: var(--peach-soft); }
+.chip-option[data-group="baharat-sos"] { background: var(--accent-soft); }
+.chip-option[data-group="diger"] { background: var(--surface-tint); }
+
+.chip-option.chip-option--selected {
   background: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
+  border-color: var(--primary-dark);
+  color: var(--text);
+  font-weight: 700;
 }
 
 .chip-option--static {
@@ -327,9 +412,10 @@ input:focus-visible {
 }
 
 .filter-option--selected {
-  background: var(--surface-tint);
+  background: var(--primary);
   border-color: var(--primary-dark);
-  color: var(--primary-dark);
+  color: var(--text);
+  font-weight: 700;
 }
 
 #show-recipes {
@@ -340,9 +426,15 @@ input:focus-visible {
 
 .results-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   margin-bottom: 16px;
+}
+
+.results-header h1 {
+  margin: 0;
 }
 
 .result-group {
@@ -355,16 +447,17 @@ input:focus-visible {
   border-radius: 999px;
   padding: 6px 14px;
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .badge-mint {
   background: var(--mint-soft);
-  color: #1f7d75;
+  color: var(--mint-dark);
 }
 
 .badge-peach {
   background: var(--peach);
-  color: #7a3d15;
+  color: var(--peach-dark);
 }
 
 .recipe-cards {
@@ -404,8 +497,8 @@ input:focus-visible {
 
 .recipe-card__missing {
   margin: 0;
-  color: var(--primary-dark);
-  font-weight: 600;
+  color: var(--text);
+  font-weight: 700;
 }
 
 .empty-state {
@@ -442,10 +535,11 @@ input:focus-visible {
 
 .badge-allergen {
   background: var(--surface-tint);
-  color: var(--primary-dark);
+  color: var(--text);
   border-radius: 999px;
   padding: 4px 10px;
   font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .recipe-detail__body {
@@ -475,7 +569,7 @@ input:focus-visible {
 }
 
 .ingredient--have .ingredient-check {
-  color: var(--mint);
+  color: var(--mint-dark);
 }
 
 .ingredient--missing .ingredient-check {
@@ -483,8 +577,8 @@ input:focus-visible {
 }
 
 .ingredient--missing {
-  color: var(--primary-dark);
-  font-weight: 600;
+  color: var(--text);
+  font-weight: 700;
 }
 
 .ingredient--optional .ingredient-check {
@@ -551,11 +645,14 @@ input:focus-visible {
   align-items: center;
   gap: 10px;
   flex: 1;
+  min-height: 44px;
+  cursor: pointer;
 }
 
 .shopping-list__item input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
 }
 
 .shopping-list__item--checked span {
@@ -566,4 +663,15 @@ input:focus-visible {
 .shopping-list-actions {
   display: flex;
   gap: 12px;
+}
+
+/* ---- Hata sayfası ---- */
+
+.error-page {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.error-page__emoji {
+  font-size: 3.5rem;
 }

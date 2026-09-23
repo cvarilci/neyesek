@@ -20,6 +20,7 @@
         >
         <ul id="search-results" class="search-results" role="listbox" hidden></ul>
         <p id="search-hint" class="hint">Yazarken önerileri görürsün, ↑ ↓ ile gezip Enter ile seçebilirsin.</p>
+        <p id="search-status" class="search-status visually-hidden" aria-live="polite"></p>
     </div>
 
     <div id="selected-chips" class="chip-list" aria-live="polite"></div>
@@ -31,7 +32,7 @@
                 <h3>{{ group.name }}</h3>
                 <div class="chip-options">
                     {% for ingredient in group.browsable_ingredients %}
-                    <button type="button" class="chip-option" data-slug="{{ ingredient.slug }}" data-name="{{ ingredient.name }}">
+                    <button type="button" class="chip-option" data-group="{{ group.name|slugify }}" data-slug="{{ ingredient.slug }}" data-name="{{ ingredient.name }}">
                         {{ ingredient.name }}
                     </button>
                     {% endfor %}
