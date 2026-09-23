@@ -36,21 +36,21 @@ Kullanıcı deneyimi (Faz 2 sonunda çalışır olacak):
 - [ ] Supabase'de yeni proje oluştur. **Project Settings → Database → Connection string** bölümünden **Transaction pooler** (port 6543) adresini kopyala. Bu adresi yalnızca `.env` dosyasına yazacaksın, sohbete yapıştırma.
 
 ### Görevler
-- [ ] **Git kurulumu** (klasör henüz git deposu değil):
+- [x] **Git kurulumu** (klasör henüz git deposu değil):
   - `git init -b main`
   - `git remote add origin https://github.com/cvarilci/neyesek.git`
   - `git fetch origin` ile uzak depoyu kontrol et. Uzak depo boşsa doğrudan devam et. İçinde README veya LICENSE gibi dosyalar varsa `git pull origin main --allow-unrelated-histories` ile birleştir; çakışma çıkarsa dur ve kullanıcıya sor.
   - `.gitignore` dosyasını **ilk commit'ten önce** oluştur.
   - İlk commit yalnızca `.gitignore`, `CLAUDE.md` ve `PLAN.md` içersin: `docs: proje planı ve kuralları`. Ardından `git push -u origin main`.
-- [ ] Sanal ortam (`.venv`) ve `requirements.txt` (Django, dj-database-url, python-dotenv, psycopg[binary], whitenoise)
-- [ ] `config` adlı Django projesi ve `recipes` uygulaması
-- [ ] Ayarları `.env` dosyasından okuyan `settings.py` (`SECRET_KEY`, `DEBUG`, `DATABASE_URL`, `ALLOWED_HOSTS`, `CSRF_TRUSTED_ORIGINS`)
-- [ ] `DATABASE_URL` yoksa SQLite'a düşen yapı; Supabase için `CONN_MAX_AGE=0` ve `DISABLE_SERVER_SIDE_CURSORS=True`
-- [ ] `LANGUAGE_CODE = "tr"`, `TIME_ZONE = "Europe/Istanbul"`
-- [ ] Değer içermeyen `.env.example` (`.gitignore` git kurulumunda oluşturuldu; `.env`, `.venv/`, `db.sqlite3`, `__pycache__/`, `staticfiles/` içermeli)
-- [ ] WhiteNoise ayarı, `templates/` ve `static/` klasörleri
-- [ ] "Neyesek yakında 🍲" yazan basit bir `base.html` ve ana sayfa
-- [ ] Kurulum adımlarını anlatan `README.md`
+- [x] Sanal ortam (`.venv`) ve `requirements.txt` (Django, dj-database-url, python-dotenv, psycopg[binary], whitenoise)
+- [x] `config` adlı Django projesi ve `recipes` uygulaması
+- [x] Ayarları `.env` dosyasından okuyan `settings.py` (`SECRET_KEY`, `DEBUG`, `DATABASE_URL`, `ALLOWED_HOSTS`, `CSRF_TRUSTED_ORIGINS`)
+- [x] `DATABASE_URL` yoksa SQLite'a düşen yapı; Supabase için `CONN_MAX_AGE=0` ve `DISABLE_SERVER_SIDE_CURSORS=True`
+- [x] `LANGUAGE_CODE = "tr"`, `TIME_ZONE = "Europe/Istanbul"`
+- [x] Değer içermeyen `.env.example` (`.gitignore` git kurulumunda oluşturuldu; `.env`, `.venv/`, `db.sqlite3`, `__pycache__/`, `staticfiles/` içermeli)
+- [x] WhiteNoise ayarı, `templates/` ve `static/` klasörleri
+- [x] "Neyesek yakında 🍲" yazan basit bir `base.html` ve ana sayfa
+- [x] Kurulum adımlarını anlatan `README.md`
 
 ### Kabul kriterleri
 - `python manage.py runserver` ile `http://127.0.0.1:8000` açılıyor.

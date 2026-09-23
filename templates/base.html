@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Neyesek{% endblock %}</title>
+    <meta name="description" content="Evdeki malzemelerle hemen yapabileceğin tarifleri bul.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-header__logo" href="{% url 'recipes:home' %}">Neyesek 🍲</a>
+    </header>
+
+    <main class="site-main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>Neyesek — evdekilerle ne pişirsem?</p>
+    </footer>
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
