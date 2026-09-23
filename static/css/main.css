@@ -79,3 +79,491 @@ a {
 .coming-soon p {
   color: var(--text-muted);
 }
+
+/* ---- Üst bar ---- */
+
+.site-header {
+  justify-content: space-between;
+}
+
+.site-header__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  min-height: 44px;
+}
+
+.badge {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+}
+
+/* ---- Genel bileşenler ---- */
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary-dark);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+}
+
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* ---- Ana sayfa: hero + malzeme seçimi ---- */
+
+.hero {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  color: var(--text-muted);
+}
+
+.ingredient-picker {
+  margin-bottom: 24px;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.search-box label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+#ingredient-search {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.search-results {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 4px 0 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.search-result {
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.search-result--active,
+.search-result:hover {
+  background: var(--surface-tint);
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  min-height: 1px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--mint-soft);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 6px 8px 6px 14px;
+  font-weight: 600;
+}
+
+.chip__remove {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.chip__remove:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.ingredient-group {
+  margin-bottom: 16px;
+}
+
+.ingredient-group h3 {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.chip-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip-option {
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-main);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chip-option--selected {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.chip-option--static {
+  cursor: default;
+}
+
+/* ---- Filtreler ---- */
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.filter-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-option {
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-main);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-option--selected {
+  background: var(--surface-tint);
+  border-color: var(--primary-dark);
+  color: var(--primary-dark);
+}
+
+#show-recipes {
+  width: 100%;
+}
+
+/* ---- Sonuç sayfası ---- */
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.result-group {
+  margin-bottom: 32px;
+}
+
+.badge-mint,
+.badge-peach {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 1rem;
+}
+
+.badge-mint {
+  background: var(--mint-soft);
+  color: #1f7d75;
+}
+
+.badge-peach {
+  background: var(--peach);
+  color: #7a3d15;
+}
+
+.recipe-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.recipe-card {
+  display: block;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.recipe-card__emoji {
+  font-size: 2rem;
+}
+
+.recipe-card h3 {
+  margin: 8px 0 4px;
+}
+
+.recipe-card__meta {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin: 0 0 8px;
+}
+
+.recipe-card__summary {
+  margin: 0;
+}
+
+.recipe-card__missing {
+  margin: 0;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.empty-state {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.empty-state .chip-options {
+  justify-content: center;
+  margin: 16px 0;
+}
+
+/* ---- Tarif detayı ---- */
+
+.recipe-detail__header {
+  text-align: center;
+  margin: 16px 0 24px;
+}
+
+.recipe-detail__emoji {
+  font-size: 3rem;
+}
+
+.allergen-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.badge-allergen {
+  background: var(--surface-tint);
+  color: var(--primary-dark);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.recipe-detail__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.recipe-ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.recipe-ingredients li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.ingredient-check {
+  width: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.ingredient--have .ingredient-check {
+  color: var(--mint);
+}
+
+.ingredient--missing .ingredient-check {
+  color: var(--primary-dark);
+}
+
+.ingredient--missing {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.ingredient--optional .ingredient-check {
+  color: var(--text-muted);
+}
+
+.ingredient--optional {
+  color: var(--text-muted);
+}
+
+.badge-optional {
+  background: var(--surface-tint);
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+}
+
+.recipe-steps ol {
+  padding-left: 20px;
+}
+
+.recipe-steps li {
+  margin-bottom: 12px;
+}
+
+.recipe-tips {
+  background: var(--surface-tint);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+}
+
+@media (min-width: 768px) {
+  .recipe-detail__body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipe-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---- Alışveriş listesi ---- */
+
+.shopping-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.shopping-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  box-shadow: var(--shadow);
+}
+
+.shopping-list__item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.shopping-list__item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.shopping-list__item--checked span {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.shopping-list-actions {
+  display: flex;
+  gap: 12px;
+}

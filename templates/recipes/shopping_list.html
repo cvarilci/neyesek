@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Alışveriş listesi — Neyesek{% endblock %}
+
+{% block content %}
+<section class="shopping-list-page">
+    <h1>Alışveriş listesi</h1>
+    <p>Tarif sayfalarında "Eksikleri listeye ekle" dediğinde buraya eklenir.</p>
+
+    <ul id="shopping-list-items" class="shopping-list"></ul>
+
+    <p id="shopping-list-empty" class="hint" hidden>Listen şu an boş. Bir tarifin eksik malzemelerini ekleyerek başlayabilirsin.</p>
+
+    <div class="shopping-list-actions">
+        <button type="button" id="copy-list" class="btn-secondary">Kopyala</button>
+        <button type="button" id="clear-list" class="btn-secondary">Listeyi temizle</button>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}{{ recipe.title }} — Neyesek{% endblock %}
+
+{% block content %}
+<article class="recipe-detail">
+    <a class="btn-secondary" href="{% url 'recipes:recipe_results' %}?m={{ m_param }}">← Sonuçlara dön</a>
+
+    <header class="recipe-detail__header">
+        <span class="recipe-detail__emoji">{{ recipe.emoji }}</span>
+        <h1>{{ recipe.title }}</h1>
+        <p>{{ recipe.summary }}</p>
+        <p class="recipe-card__meta">
+            ⏱ {{ recipe.total_minutes }} dk (hazırlık {{ recipe.prep_minutes }} + pişirme {{ recipe.cook_minutes }})
+            · {{ recipe.servings }} porsiyon · {{ recipe.get_difficulty_display }}
+        </p>
+        {% if allergens %}
+        <p class="allergen-badges">
+            {% for allergen in allergens %}
+            <span class="badge-allergen">{{ allergen.emoji }} {{ allergen.name }}</span>
+            {% endfor %}
+        </p>
+        {% endif %}
+    </header>
+
+    <div class="recipe-detail__body">
+        <section class="recipe-ingredients">
+            <h2>Malzemeler</h2>
+            <ul>
+                {% for row in ingredient_rows %}
+                <li class="{% if row.have %}ingredient--have{% elif row.is_optional %}ingredient--optional{% else %}ingredient--missing{% endif %}">
+                    <span class="ingredient-check">{% if row.have %}✓{% else %}○{% endif %}</span>
+                    {{ row.ingredient.name }} — {{ row.amount }}
+                    {% if row.is_optional %}<span class="badge-optional">opsiyonel</span>{% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% if missing_items %}
+            <button type="button" id="add-missing-to-list" class="btn-primary">Eksikleri listeye ekle</button>
+            {% endif %}
+        </section>
+
+        <section class="recipe-steps">
+            <h2>Adımlar</h2>
+            <ol>
+                {% for step in recipe.step_list %}
+                <li>{{ step }}</li>
+                {% endfor %}
+            </ol>
+
+            {% if recipe.tips %}
+            <p class="recipe-tips">💡 {{ recipe.tips }}</p>
+            {% endif %}
+        </section>
+    </div>
+</article>
+
+{{ missing_items|json_script:"missing-ingredients-data" }}
+{% endblock %}

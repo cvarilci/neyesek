@@ -152,11 +152,11 @@ Veri seti küçük olduğu için eşleştirme Python tarafında yapılabilir. `p
 - Kullanıcı verisini DOM'a `textContent` ile yaz, `innerHTML` kullanma
 
 ### Görevler
-- [ ] `services.py` eşleştirme fonksiyonu ve birim testleri (hazır, az eksik, elenen, temel malzeme, süre filtresi senaryoları)
-- [ ] Otomatik tamamlama JSON uç noktası
-- [ ] Ana sayfa, sonuç, detay ve alışveriş listesi şablonları
-- [ ] Geçersiz veya boş parametrelerde düzgün davranış (hata değil, yol gösteren boş durum mesajı)
-- [ ] Hiç sonuç çıkmazsa öneri: "Şu malzemelerden birini eklersen X tarif daha açılıyor" (opsiyonel, basit tut)
+- [x] `services.py` eşleştirme fonksiyonu ve birim testleri (hazır, az eksik, elenen, temel malzeme, süre filtresi senaryoları)
+- [x] Otomatik tamamlama JSON uç noktası
+- [x] Ana sayfa, sonuç, detay ve alışveriş listesi şablonları
+- [x] Geçersiz veya boş parametrelerde düzgün davranış (hata değil, yol gösteren boş durum mesajı)
+- [x] Hiç sonuç çıkmazsa öneri: "Şu malzemelerden birini eklersen X tarif daha açılıyor" (opsiyonel, basit tut)
 
 ### Kabul kriterleri
 - "yumurta, domates, biber" seçilince menemen "Hemen yapabilirsin" grubunda çıkıyor.

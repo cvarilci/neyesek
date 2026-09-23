@@ -1,10 +1,67 @@
 {% extends "base.html" %}
 
-{% block title %}Neyesek — yakında{% endblock %}
+{% block title %}Neyesek — Bu akşam ne pişirsek?{% endblock %}
 
 {% block content %}
-<section class="coming-soon">
-    <h1>Neyesek yakında 🍲</h1>
-    <p>Evdeki malzemelerle bu akşam ne pişirebileceğini birlikte bulacağız.</p>
+<section class="hero">
+    <h1>Bu akşam evde neler var?</h1>
+    <p>Malzemeleri seç, sana hemen yapabileceğin tarifleri bulalım.</p>
 </section>
+
+<section class="ingredient-picker">
+    <div class="search-box">
+        <label for="ingredient-search">Malzeme ara</label>
+        <input
+            type="text"
+            id="ingredient-search"
+            autocomplete="off"
+            placeholder="örn. domates, yumurta..."
+            aria-describedby="search-hint"
+        >
+        <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+        <p id="search-hint" class="hint">Yazarken önerileri görürsün, ↑ ↓ ile gezip Enter ile seçebilirsin.</p>
+    </div>
+
+    <div id="selected-chips" class="chip-list" aria-live="polite"></div>
+
+    <div class="popular-ingredients">
+        {% for group in groups %}
+            {% if group.browsable_ingredients %}
+            <div class="ingredient-group">
+                <h3>{{ group.name }}</h3>
+                <div class="chip-options">
+                    {% for ingredient in group.browsable_ingredients %}
+                    <button type="button" class="chip-option" data-slug="{{ ingredient.slug }}" data-name="{{ ingredient.name }}">
+                        {{ ingredient.name }}
+                    </button>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<section class="filters">
+    <div class="filter-group">
+        <span class="filter-label">Süre</span>
+        <div class="filter-options" id="duration-options">
+            {% for d in durations %}
+            <button type="button" class="filter-option" data-value="{{ d }}">{{ d }} dk</button>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="filter-group">
+        <span class="filter-label">Kategori</span>
+        <div class="filter-options" id="category-options">
+            {% for category in categories %}
+            <button type="button" class="filter-option" data-value="{{ category.slug }}">{{ category.emoji }} {{ category.name }}</button>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<button type="button" id="show-recipes" class="btn-primary">Tarifleri göster</button>
+<p id="empty-selection-hint" class="hint" hidden>Önce en az bir malzeme seçmelisin.</p>
 {% endblock %}

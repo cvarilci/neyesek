@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Tarifler — Neyesek{% endblock %}
+
+{% block content %}
+{% if no_selection %}
+<section class="empty-state">
+    <h1>Henüz malzeme seçmedin</h1>
+    <p>Tarif önerebilmemiz için önce evindeki malzemeleri seçmen gerekiyor.</p>
+    <a class="btn-primary" href="{% url 'recipes:home' %}">Malzeme seçmeye git</a>
+</section>
+{% else %}
+<section class="results-header">
+    <h1>Tarifler</h1>
+    <a class="btn-secondary" href="{% url 'recipes:home' %}">Malzemeleri değiştir</a>
+</section>
+
+{% if selected_ingredients %}
+<p class="hint">
+    Seçtiklerin:
+    {% for ingredient in selected_ingredients %}{{ ingredient.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+</p>
+{% endif %}
+
+{% if ready %}
+<section class="result-group">
+    <h2><span class="badge-mint">Hemen yapabilirsin</span></h2>
+    <div class="recipe-cards">
+        {% for match in ready %}
+        <a class="recipe-card" href="{% url 'recipes:recipe_detail' match.recipe.slug %}?m={{ m_param }}">
+            <span class="recipe-card__emoji">{{ match.recipe.emoji }}</span>
+            <h3>{{ match.recipe.title }}</h3>
+            <p class="recipe-card__meta">⏱ {{ match.recipe.total_minutes }} dk · {{ match.recipe.category.name }}</p>
+            <p class="recipe-card__summary">{{ match.recipe.summary }}</p>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% if almost %}
+<section class="result-group">
+    <h2><span class="badge-peach">1–3 malzeme alırsan</span></h2>
+    <div class="recipe-cards">
+        {% for match in almost %}
+        <a class="recipe-card" href="{% url 'recipes:recipe_detail' match.recipe.slug %}?m={{ m_param }}">
+            <span class="recipe-card__emoji">{{ match.recipe.emoji }}</span>
+            <h3>{{ match.recipe.title }}</h3>
+            <p class="recipe-card__meta">⏱ {{ match.recipe.total_minutes }} dk · {{ match.recipe.category.name }}</p>
+            <p class="recipe-card__missing">
+                Eksik:
+                {% for ingredient in match.missing_ingredients %}{{ ingredient.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+            </p>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% if not ready and not almost %}
+<section class="empty-state">
+    <h1>Uygun tarif bulamadık 😕</h1>
+    {% if suggestions %}
+    <p>Şunlardan birini eklersen daha fazla tarif açılabilir:</p>
+    <div class="chip-options">
+        {% for ingredient in suggestions %}
+        <span class="chip-option chip-option--static">{{ ingredient.name }}</span>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>Farklı malzemeler seçmeyi ya da süre/kategori filtrelerini gevşetmeyi dene.</p>
+    {% endif %}
+    <a class="btn-primary" href="{% url 'recipes:home' %}">Malzemeleri değiştir</a>
+</section>
+{% endif %}
+{% endif %}
+{% endblock %}
