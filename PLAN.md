@@ -211,9 +211,7 @@ mobil/masaüstü kontrollerini nasıl yaptığını yaz. Commit'le ve push et (C
 
 **Amaç:** Üyelik olmadan her şey çalışmaya devam eder. Üye olan kullanıcı dolabını, favorilerini ve alışveriş listesini hesabında saklar.
 
-### Kullanıcının önceden yapacakları
-- [ ] Google Cloud Console'da OAuth istemcisi oluştur. Yetkili yönlendirme adresi (yerel): `http://127.0.0.1:8000/hesap/google/login/callback/`
-- [ ] Client ID ve Secret değerlerini `.env` dosyasına yaz.
+> **Not:** Google ile giriş bu fazın kapsamından çıkarıldı (bkz. "Sonraki fikirler" — istenirse ayrıca eklenir). Bu sayede Google Cloud Console kurulumuna gerek yok; kayıt formunda e-posta, şifre ve ad alanı yeterli.
 
 ### Modeller (`accounts` uygulaması)
 | Model | Alanlar |
@@ -223,7 +221,7 @@ mobil/masaüstü kontrollerini nasıl yaptığını yaz. Commit'le ve push et (C
 | `ShoppingItem` | `user`, `ingredient` (opsiyonel FK), `text`, `is_checked`, `created_at` |
 
 ### Görevler
-- [ ] `django-allauth`: e-posta ile giriş (kullanıcı adı yok), şifre sıfırlama, Google ile giriş
+- [ ] `django-allauth`: e-posta ile giriş (kullanıcı adı yok), şifre sıfırlama. Kayıt formuna **ad** alanı eklenir (Django `User.first_name`), Google ile giriş **yok**.
 - [ ] Geliştirmede e-postalar konsola yazılsın; gerçek e-posta servisi sonra eklenecek
 - [ ] Giriş, kayıt ve şifre sıfırlama şablonları tasarım diline uygun ve Türkçe
 - [ ] Giriş yapınca `localStorage` içindeki seçimler ve alışveriş listesi hesaba aktarılsın (bir kerelik birleştirme)
@@ -234,16 +232,16 @@ mobil/masaüstü kontrollerini nasıl yaptığını yaz. Commit'le ve push et (C
 
 ### Kabul kriterleri
 - Üye olmadan Faz 2 ve 3'teki her şey aynen çalışıyor.
-- E-posta/şifre ve Google ile kayıt ve giriş yerelde çalışıyor.
+- E-posta/şifre/ad ile kayıt ve giriş yerelde çalışıyor, girilen ad hesapta görünüyor.
 - Farklı tarayıcıdan giriş yapınca dolap, favoriler ve liste aynı şekilde geliyor.
 - Yetki testleri geçiyor.
 
 ### Claude Code'a verilecek prompt
 ```
 Faz 4'ü uygula. Kimlik doğrulama için django-allauth kullan, Supabase Auth kullanma.
+Google ile giriş yok; yalnızca e-posta + şifre + ad ile kayıt/giriş.
 Üyeliksiz kullanım bozulmamalı. Kullanıcıya ait her sorguyu request.user ile filtrele
-ve bunun için yetki testleri yaz. Google OAuth anahtarlarını .env dosyasından oku.
-Bittiğinde Google Console'da benim yapmam gereken ayarları da listele. Commit'le ve push et (CLAUDE.md → Git akışı). Faz 5'e geçme.
+ve bunun için yetki testleri yaz. Commit'le ve push et (CLAUDE.md → Git akışı). Faz 5'e geçme.
 ```
 
 ---
@@ -283,6 +281,7 @@ bu yüzden push'tan önce testlerin geçtiğinden emin ol.
 
 ## Sonraki fikirler (prototip sonrası)
 
+- Google ile giriş (django-allauth + Google OAuth istemcisi, Faz 4'ten çıkarıldı)
 - Yapay zekâ destekli öneri: dolaptaki malzemelere göre seed'de olmayan bir tarif önerisi
 - Tarif görselleri (Supabase Storage)
 - Haftalık menü planı ve planın tamamı için alışveriş listesi
