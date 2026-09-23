@@ -89,13 +89,13 @@ Kurulum commit'lerini ve push'u PLAN.md'deki Git kurulumu adımlarına göre yap
 - `Recipe.allergens` bir özellik olarak malzemelerin alerjenlerinden türetilir; ayrıca elle girilmez.
 
 ### Görevler
-- [ ] Modeller, `verbose_name` alanları Türkçe, `__str__` metotları
-- [ ] Admin: `RecipeIngredient` satır içi (inline), arama ve filtreler, slug otomatik doldurma
-- [ ] `normalize_tr()` ve Türkçe slug yardımcı fonksiyonları (`recipes/utils.py`)
-- [ ] Seed verisi `recipes/fixtures/` altında: alerjenler, malzeme grupları, **yaklaşık 120 malzeme**, kategoriler, **40–60 tarif**
-- [ ] Tarif seçim ölçütleri: toplam süre çoğunlukla 45 dakikanın altında, gerçekçi Türk ev yemekleri (menemen, mercimek çorbası, tavuk sote, fırın makarna, kıymalı patates, zeytinyağlı fasulye vb.), her tarif 4–10 malzeme ve 3–8 adım
-- [ ] Tek komutla yükleme: `python manage.py loaddata ...` ya da `python manage.py seed_recipes` yönetim komutu
-- [ ] Model testleri: toplam süre, alerjen türetme, `normalize_tr()`
+- [x] Modeller, `verbose_name` alanları Türkçe, `__str__` metotları
+- [x] Admin: `RecipeIngredient` satır içi (inline), arama ve filtreler, slug otomatik doldurma
+- [x] `normalize_tr()` ve Türkçe slug yardımcı fonksiyonları (`recipes/utils.py`)
+- [x] Seed verisi `recipes/fixtures/` altında: alerjenler, malzeme grupları, **yaklaşık 120 malzeme**, kategoriler, **40–60 tarif**
+- [x] Tarif seçim ölçütleri: toplam süre çoğunlukla 45 dakikanın altında, gerçekçi Türk ev yemekleri (menemen, mercimek çorbası, tavuk sote, fırın makarna, kıymalı patates, zeytinyağlı fasulye vb.), her tarif 4–10 malzeme ve 3–8 adım
+- [x] Tek komutla yükleme: `python manage.py loaddata ...` ya da `python manage.py seed_recipes` yönetim komutu
+- [x] Model testleri: toplam süre, alerjen türetme, `normalize_tr()`
 
 ### Kabul kriterleri
 - Admin panelinden tarifler malzemeleriyle birlikte görüntülenip düzenlenebiliyor.

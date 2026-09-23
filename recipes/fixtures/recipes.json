@@ -1,0 +1,3112 @@
+[
+  {
+    "title": "Mercimek Çorbası",
+    "summary": "Kırmızı mercimeğin havuç ve patatesle kaynatılıp pürüzsüz hale getirildiği, limonla servis edilen klasik bir Türk çorbası.",
+    "category": "Çorba",
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍲",
+    "steps": [
+      "Soğanı ve havucu küçük küp doğrayın.",
+      "Tereyağını tencerede eritip soğan ve havucu ekleyin, yumuşayana kadar soteleyin.",
+      "Domates salçasını ekleyip bir dakika kavurun.",
+      "Kırmızı mercimeği ve küp doğranmış patatesi ilave edin.",
+      "Üzerini geçecek kadar su ekleyip kaynamaya bırakın.",
+      "Mercimekler ve patatesler yumuşayınca ocaktan alıp blenderdan geçirin.",
+      "Tuz ve karabiber ile tatlandırıp dilerseniz limonla servis edin."
+    ],
+    "tips": "Çorbayı daha akıcı kıvamda isterseniz blenderdan geçirdikten sonra biraz daha su ekleyebilirsiniz.",
+    "ingredients": [
+      {
+        "ingredient": "Kırmızı mercimek",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Havuç",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patates",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "6 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Yayla Çorbası",
+    "summary": "Yoğurt, pirinç ve yumurtayla hazırlanan, üzerine naneli tereyağı gezdirilen ferahlatıcı bir çorba.",
+    "category": "Çorba",
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🥣",
+    "steps": [
+      "Pirinci bol suda yumuşayana kadar haşlayın.",
+      "Ayrı bir kapta yoğurt, yumurta ve unu pürüzsüz olana kadar çırpın.",
+      "Yoğurt karışımına haşlama suyundan birkaç kepçe ekleyerek inceltin.",
+      "İnceltilen karışımı kaynayan pirinçli suya yavaşça, karıştırarak dökün.",
+      "Çorbayı kısık ateşte, sürekli karıştırarak birkaç dakika kaynatın.",
+      "Tuz ve karabiberi ekleyin.",
+      "Ayrı bir tavada tereyağını eritip kuru naneyi kavurun ve çorbanın üzerine gezdirin."
+    ],
+    "tips": "Yoğurt karışımını kaynayan çorbaya eklerken sürekli karıştırın, aksi halde kesilebilir.",
+    "ingredients": [
+      {
+        "ingredient": "Yoğurt",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Pirinç",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Un",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "5 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru nane",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Ezogelin Çorbası",
+    "summary": "Kırmızı mercimek ve ince bulgurun salça ve baharatlarla buluştuğu doyurucu bir gelin çorbası.",
+    "category": "Çorba",
+    "prep_minutes": 10,
+    "cook_minutes": 30,
+    "servings": 6,
+    "difficulty": "kolay",
+    "emoji": "🍜",
+    "steps": [
+      "Soğanı küçük küp doğrayın.",
+      "Tencerede sıvı yağı ısıtıp soğanı pembeleşene kadar soteleyin.",
+      "Domates salçası ve biber salçasını ekleyip kısa süre kavurun.",
+      "Kırmızı mercimek ve ince bulguru ilave edin.",
+      "Suyu ekleyip karıştırarak kaynatın.",
+      "Mercimek ve bulgur yumuşayana kadar orta ateşte pişirin.",
+      "Kuru nane, kırmızı pul biber ve tuzu ekleyip birkaç dakika daha kaynatın."
+    ],
+    "tips": "Tencereyi kaynama sırasında sık sık karıştırın, mercimek ve bulgur dibe yapışabilir.",
+    "ingredients": [
+      {
+        "ingredient": "Kırmızı mercimek",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "İnce bulgur",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Biber salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Kuru nane",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "7 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Domates Çorbası",
+    "summary": "Domatesin soğan ve unla pişirilip kremayla zenginleştirildiği yumuşak dokulu bir çorba.",
+    "category": "Çorba",
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍅",
+    "steps": [
+      "Soğanı ince kıyın, domatesleri rendeleyin.",
+      "Tencerede tereyağını eritip soğanı yumuşayana kadar soteleyin.",
+      "Unu ekleyip kısık ateşte birkaç dakika kavurun.",
+      "Domates salçası ve rendelenmiş domatesi ilave edin.",
+      "Su ekleyip karıştırarak kaynamaya bırakın.",
+      "Şeker, tuz ve karabiber ile tatlandırın.",
+      "İsteğe bağlı olarak kremayı ekleyip karıştırıp servis edin."
+    ],
+    "tips": "Domatesler çok ekşiyse bir tutam şeker ekşiliği dengeler.",
+    "ingredients": [
+      {
+        "ingredient": "Domates",
+        "amount": "4 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Un",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "4 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Şeker",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Krema",
+        "amount": "2 yemek kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Şehriyeli Tavuk Çorbası",
+    "summary": "Tavuk, sebze ve şehriyenin bir arada kaynatıldığı, iyi geldiği bilinen klasik bir tavuk çorbası.",
+    "category": "Çorba",
+    "prep_minutes": 15,
+    "cook_minutes": 35,
+    "servings": 6,
+    "difficulty": "orta",
+    "emoji": "🍗",
+    "steps": [
+      "Tavuk göğsünü, havucu ve soğanı büyükçe parçalar halinde tencereye koyun.",
+      "Üzerini geçecek kadar su ekleyip orta ateşte haşlayın.",
+      "Tavuk pişince sudan çıkarıp elinizle didikleyin.",
+      "Haşlama suyunu süzüp tencereye geri alın, küp doğranmış patatesi ekleyin.",
+      "Patatesler yumuşamaya başlayınca şehriyeyi ilave edin.",
+      "Didiklenmiş tavuğu tencereye geri koyup birkaç dakika daha pişirin.",
+      "Tuz ve karabiber ile tatlandırıp isteğe bağlı maydanozla servis edin."
+    ],
+    "tips": "Tavuğu haşlama suyunu atmayın, çorbanın lezzeti bu sudan gelir.",
+    "ingredients": [
+      {
+        "ingredient": "Tavuk göğsü",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Havuç",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patates",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Şehriye",
+        "amount": "yarım su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "8 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "birkaç dal",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Mantar Çorbası",
+    "summary": "Taze mantarın soğan ve sütle pişirilerek kremamsı bir kıvam kazandığı bir çorba.",
+    "category": "Çorba",
+    "prep_minutes": 10,
+    "cook_minutes": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "emoji": "🍄",
+    "steps": [
+      "Mantarları ince dilimleyin, soğanı küçük küp doğrayın.",
+      "Tencerede tereyağını eritip soğanı soteleyin.",
+      "Mantarları ekleyip suyunu salıp çekene kadar pişirin.",
+      "Unu ekleyip birkaç dakika kavurun.",
+      "Süt ve suyu azar azar, karıştırarak ekleyin.",
+      "Kısık ateşte kıvam alana kadar kaynatın.",
+      "Tuz ve karabiberi ekleyip isteğe bağlı kremayla servis edin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Mantar",
+        "amount": "250 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Un",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Süt",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Krema",
+        "amount": "2 yemek kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Kıymalı Patates",
+    "summary": "Kıyma ve patatesin tek tavada buluştuğu, doyurucu ve pratik bir akşam yemeği.",
+    "category": "Tek tava",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🥔",
+    "steps": [
+      "Soğanları küp küp doğrayın.",
+      "Patatesleri soyup küp küp doğrayın.",
+      "Sıvı yağı tavada kızdırın, soğanları pembeleşene kadar kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar kavurun.",
+      "Domates salçasını ekleyip bir dakika kavurun.",
+      "Patatesleri ekleyip karıştırın.",
+      "Su, tuz ve karabiberi ekleyip kapağı kapatarak patatesler yumuşayana kadar pişirin."
+    ],
+    "tips": "Patatesleri küçük doğrarsanız pişme süresi kısalır.",
+    "ingredients": [
+      {
+        "ingredient": "Kıyma",
+        "amount": "250 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patates",
+        "amount": "4 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1/2 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Sebzeli Tavuk Sote",
+    "summary": "Tavuk ve mevsim sebzelerinin tek tavada hafif yağla sotelendiği pratik bir yemek.",
+    "category": "Tek tava",
+    "prep_minutes": 15,
+    "cook_minutes": 20,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🍗",
+    "steps": [
+      "Tavuk göğsünü kuşbaşı doğrayın.",
+      "Havucu ve kabağı yarım ay şeklinde dilimleyin.",
+      "Soğanı yarım ay doğrayın, sarımsağı ince kıyın.",
+      "Sıvı yağı tavada kızdırın, tavukları ekleyip rengi dönene kadar kavurun.",
+      "Soğan ve sarımsağı ekleyip yumuşayana kadar kavurun.",
+      "Havuç, kabak ve dolmalık biberi ekleyip orta ateşte karıştırarak pişirin.",
+      "Tuz, karabiber ve kekiği ekleyip sebzeler diri kalacak şekilde birkaç dakika daha pişirin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Tavuk göğsü",
+        "amount": "500 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Dolmalık biber",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kabak",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Havuç",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "2 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1/2 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kekik",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Kıymalı Tava Makarna",
+    "summary": "Kıymalı domates sosuyla harmanlanan, üzeri eriyen kaşarla kaplanan doyurucu tek tava makarna.",
+    "category": "Tek tava",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🍝",
+    "steps": [
+      "Makarnayı kaynar tuzlu suda paketin üzerindeki süreden 2 dakika az haşlayıp süzün.",
+      "Soğanı küçük küp doğrayın.",
+      "Sıvı yağı tavada kızdırın, soğanları kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar kavurun.",
+      "Domates salçasını ve rendelenmiş domatesi ekleyip birkaç dakika pişirin.",
+      "Su, tuz ve karabiberi ekleyip kısık ateşte biraz daha pişirin.",
+      "Haşlanmış makarnayı tavaya ekleyip karıştırın.",
+      "Üzerine rendelenmiş kaşar peynirini serpip eriyene kadar kapağı kapatarak pişirin."
+    ],
+    "tips": "Makarnayı az haşlarsanız sosun içinde pişmeye devam ederken lapa olmaz.",
+    "ingredients": [
+      {
+        "ingredient": "Makarna",
+        "amount": "250 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kıyma",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kaşar peyniri",
+        "amount": "100 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1/2 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Kıymalı Bezelye",
+    "summary": "Kıyma, bezelye ve havucun bir arada kısık ateşte pişirildiği hafif bir tek tava yemeği.",
+    "category": "Tek tava",
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🟢",
+    "steps": [
+      "Soğanı küçük küp, havucu küçük küp doğrayın.",
+      "Sıvı yağı tavada kızdırın, soğanları kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar kavurun.",
+      "Havucu ekleyip birkaç dakika kavurun.",
+      "Domates salçasını ekleyip karıştırın.",
+      "Bezelye ve suyu ekleyin.",
+      "Tuz ve karabiberi ekleyip kısık ateşte bezelyeler yumuşayana kadar pişirin."
+    ],
+    "tips": "Dondurulmuş bezelye kullanırsanız çözdürmeden direkt tavaya ekleyebilirsiniz.",
+    "ingredients": [
+      {
+        "ingredient": "Kıyma",
+        "amount": "250 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Bezelye",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Havuç",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1/2 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Karides Sote",
+    "summary": "Sarımsaklı tereyağında birkaç dakikada pişen, hızlı ve şık bir tek tava karides yemeği.",
+    "category": "Tek tava",
+    "prep_minutes": 10,
+    "cook_minutes": 10,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍤",
+    "steps": [
+      "Karidesleri ayıklayıp kabuklarını soyun.",
+      "Sarımsağı ince dilimleyin, maydanozu kıyın.",
+      "Tereyağını tavada kızdırın.",
+      "Sarımsağı ekleyip kokusu çıkana kadar kavurun.",
+      "Karidesleri ekleyip yüksek ateşte 2-3 dakika pişirin.",
+      "Tuz, karabiber ve pul biberi ekleyin.",
+      "Üzerine limon suyu sıkıp maydanozu serperek servis edin."
+    ],
+    "tips": "Karidesleri fazla pişirmeyin, aksi halde lastik gibi olur.",
+    "ingredients": [
+      {
+        "ingredient": "Karides",
+        "amount": "400 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "3 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "1 tutam",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1/2 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Fırın Makarna",
+    "summary": "Kıymalı domates soslu makarnanın üzerine bol kaşar peyniri serpilip fırınlanmasıyla yapılan doyurucu bir akşam yemeği.",
+    "category": "Makarna",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🧀",
+    "steps": [
+      "Makarnayı tuzlu suda haşlayın.",
+      "Kuru soğanı küp küp doğrayıp tereyağında kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar pişirin.",
+      "Domates salçasını ekleyip birkaç dakika kavurun.",
+      "Tuz ve karabiber ile tatlandırın.",
+      "Haşlanmış makarnayı sosla karıştırıp fırın kabına alın.",
+      "Üzerine rendelenmiş kaşar peynirini serpin.",
+      "Önceden ısıtılmış fırında peynir eriyip altın rengi alana kadar pişirin."
+    ],
+    "tips": "Üzerine birkaç dakika ızgara modunda bırakırsanız peynir daha güzel kızarır.",
+    "ingredients": [
+      {
+        "ingredient": "Makarna",
+        "amount": "300 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kıyma",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kaşar peyniri",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Kıymalı Makarna",
+    "summary": "Kıyma ve domates sosuyla hazırlanan, işten eve dönüşte hızlıca pişen klasik bir makarna tarifi.",
+    "category": "Makarna",
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍝",
+    "steps": [
+      "Kuru soğanı küp küp doğrayıp sıvı yağda kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar pişirin.",
+      "Sarımsağı ve rendelenmiş domatesi ekleyin.",
+      "Domates salçasını karıştırıp birkaç dakika pişirin.",
+      "Tuz, karabiber ve pul biber ile tatlandırın.",
+      "Ayrı bir tencerede makarnayı tuzlu suda haşlayın.",
+      "Haşlanan makarnayı süzüp sosla karıştırın.",
+      "Sıcak servis yapın."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Makarna",
+        "amount": "300 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kıyma",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "2 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Naneli Yoğurtlu Makarna",
+    "summary": "Sarımsaklı yoğurt ve naneli tereyağı sosuyla hazırlanan hafif ve pratik bir makarna tarifi.",
+    "category": "Makarna",
+    "prep_minutes": 10,
+    "cook_minutes": 15,
+    "servings": 2,
+    "difficulty": "kolay",
+    "emoji": "🌿",
+    "steps": [
+      "Makarnayı tuzlu suda haşlayın.",
+      "Yoğurdu ezilmiş sarımsakla karıştırıp tuz ekleyin.",
+      "Tereyağını eritip kuru nane ve pul biberle karıştırın.",
+      "Haşlanan makarnayı süzün.",
+      "Makarnayı sarımsaklı yoğurtla karıştırın.",
+      "Üzerine naneli tereyağını gezdirin.",
+      "Sıcak servis yapın."
+    ],
+    "tips": "Yoğurdu oda sıcaklığında kullanırsanız makarnayla daha kolay karışır.",
+    "ingredients": [
+      {
+        "ingredient": "Makarna",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yoğurt",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "1 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru nane",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Kremalı Tavuklu Makarna",
+    "summary": "Tavuk göğsü ve kremalı sosla hazırlanan, üzerine kaşar peyniri serpilen doyurucu bir makarna tarifi.",
+    "category": "Makarna",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 6,
+    "difficulty": "orta",
+    "emoji": "🍗",
+    "steps": [
+      "Tavuk göğsünü küp küp doğrayın.",
+      "Kuru soğanı ince doğrayıp tereyağında kavurun.",
+      "Tavukları ekleyip rengi dönene kadar pişirin.",
+      "Dilimlenmiş mantarları ekleyip birkaç dakika kavurun.",
+      "Kremayı ekleyip karıştırın.",
+      "Tuz ve karabiber ile tatlandırıp kısık ateşte pişirin.",
+      "Ayrı tencerede haşladığınız makarnayı süzüp sosla karıştırın.",
+      "Üzerine rendelenmiş kaşar peynirini serperek servis yapın."
+    ],
+    "tips": "Kremayı kaynattıktan sonra eklerseniz sos daha pürüzsüz olur.",
+    "ingredients": [
+      {
+        "ingredient": "Makarna",
+        "amount": "450 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tavuk göğsü",
+        "amount": "3 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Mantar",
+        "amount": "250 gr",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Krema",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kaşar peyniri",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Ton Balıklı Makarna",
+    "summary": "Domates ve zeytinyağıyla hafifçe pişirilen ton balığının makarnayla buluştuğu hızlı bir akşam yemeği tarifi.",
+    "category": "Makarna",
+    "prep_minutes": 10,
+    "cook_minutes": 15,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🐟",
+    "steps": [
+      "Makarnayı tuzlu suda haşlayın.",
+      "Sarımsağı ince kıyıp zeytinyağında kavurun.",
+      "Doğranmış domatesleri ekleyip yumuşayana kadar pişirin.",
+      "Süzülmüş ton balığını ekleyip karıştırın.",
+      "Tuz ve karabiber ile tatlandırın.",
+      "Haşlanan makarnayı süzüp sosla karıştırın.",
+      "Üzerine doğranmış maydanozu serperek servis yapın."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Makarna",
+        "amount": "300 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Ton balığı",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "2 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "3 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "2 dal",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Kıymalı Ispanak",
+    "summary": "Kıyma ve domatesle pişirilen ıspanağın hafif ve doyurucu bir akşam yemeğine dönüştüğü pratik bir tarif.",
+    "category": "Sebze yemeği",
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🥬",
+    "steps": [
+      "Kuru soğanı ince ince doğrayın.",
+      "Sıvı yağda soğanı pembeleşene kadar kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar karıştırarak pişirin.",
+      "Rendelenmiş domatesi ilave edip birkaç dakika kavurun.",
+      "Yıkanıp doğranmış ıspanağı, tuzu ve karabiberi ekleyip kısık ateşte suyunu çekene kadar pişirin."
+    ],
+    "tips": "Az sulu sevenler pişirmenin son dakikalarında tencerenin kapağını açık bırakabilir.",
+    "ingredients": [
+      {
+        "ingredient": "Ispanak",
+        "amount": "1 kg",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kıyma",
+        "amount": "250 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "1 adet",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Zeytinyağlı Taze Fasulye",
+    "summary": "Taze fasulyenin zeytinyağı ve domatesle ağır ateşte pişirildiği, soğuk ya da ılık servis edilen klasik bir zeytinyağlı yemek.",
+    "category": "Sebze yemeği",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 6,
+    "difficulty": "kolay",
+    "emoji": "🫛",
+    "steps": [
+      "Taze fasulyelerin iplerini ayıklayıp ikiye bölün.",
+      "Kuru soğanı yarım ay şeklinde doğrayın.",
+      "Zeytinyağında soğanı hafifçe kavurun.",
+      "Rendelenmiş domatesi, şekeri ve tuzu ekleyip karıştırın.",
+      "Fasulyeleri ve suyu ilave edip kısık ateşte yumuşayana kadar pişirin."
+    ],
+    "tips": "Soğuduktan sonra buzdolabında birkaç saat dinlendirilirse lezzeti artar.",
+    "ingredients": [
+      {
+        "ingredient": "Taze fasulye",
+        "amount": "500 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "4 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Şeker",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Patlıcan Musakka",
+    "summary": "Kızartılmış patlıcan dilimlerinin kıymalı domates sosuyla buluştuğu, Türk mutfağının klasik sebze yemeklerinden biri.",
+    "category": "Sebze yemeği",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🍆",
+    "steps": [
+      "Patlıcanları soyarak halka halka dilimleyin ve tuzlu suda 10 dakika bekletin.",
+      "Patlıcan dilimlerini kağıt havluyla kurulayıp sıvı yağda her iki yüzü kızarana kadar kızartın.",
+      "Kuru soğanı ve sarımsağı ince ince doğrayın.",
+      "Ayrı bir tavada soğanı kavurup kıymayı ekleyin, rengi dönene kadar pişirin.",
+      "Salçayı ve rendelenmiş domatesi ekleyip birkaç dakika kaynatın.",
+      "Tuz ve karabiberi ilave edip kıymalı sosu hazırlayın.",
+      "Kızarmış patlıcanların üzerine kıymalı sosu dökerek kısık ateşte 10 dakika daha pişirin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Patlıcan",
+        "amount": "3 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kıyma",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "2 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "4 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Sebze Türlüsü",
+    "summary": "Patlıcan, kabak, patates ve biberin domates sosunda buluştuğu, mevsim sebzelerinden yapılan doyurucu bir türlü.",
+    "category": "Sebze yemeği",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 6,
+    "difficulty": "orta",
+    "emoji": "🥘",
+    "steps": [
+      "Patlıcan, kabak ve patatesleri kalın küpler halinde doğrayın.",
+      "Biberleri halka, soğanı yarım ay şeklinde doğrayın.",
+      "Sıvı yağda soğanı ve sarımsağı kısaca kavurun.",
+      "Patates ve patlıcanı ekleyip birkaç dakika çevirin.",
+      "Kabak, biber, rendelenmiş domates, tuz ve suyu ilave edin.",
+      "Kapağı kapatıp sebzeler yumuşayana kadar kısık ateşte pişirin."
+    ],
+    "tips": "Sebzeleri fırında da pişirebilirsiniz; bu durumda 200 derecede yaklaşık 30 dakika yeterlidir.",
+    "ingredients": [
+      {
+        "ingredient": "Patlıcan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kabak",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yeşil biber",
+        "amount": "2 adet",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "2 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "3 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "yarım su bardağı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Kıymalı Bamya",
+    "summary": "Bamyanın kıyma ve domates sosuyla kısık ateşte pişirildiği, limonlu ve doyurucu bir ev yemeği.",
+    "category": "Sebze yemeği",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🍛",
+    "steps": [
+      "Bamyaların sap uçlarını konik şekilde temizleyin.",
+      "Bamyaları limon suyuyla ovup 10 dakika dinlendirin.",
+      "Kuru soğanı ince doğrayıp sıvı yağda kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar pişirin.",
+      "Salçayı, rendelenmiş domatesi, tuzu ve karabiberi ilave edin.",
+      "Bamyaları ekleyip kısık ateşte yumuşayana kadar pişirin."
+    ],
+    "tips": "Limon suyu bamyanın kararmasını önler.",
+    "ingredients": [
+      {
+        "ingredient": "Bamya",
+        "amount": "400 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kıyma",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Fırında Kaşarlı Karnabahar",
+    "summary": "Haşlanmış karnabaharın beşamel sos ve kaşar peyniriyle fırında kavurulduğu hafif bir sebze yemeği.",
+    "category": "Sebze yemeği",
+    "prep_minutes": 15,
+    "cook_minutes": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "emoji": "🧀",
+    "steps": [
+      "Karnabaharı goncalara ayırıp tuzlu suda 8 dakika haşlayın.",
+      "Tereyağını tencerede eritip unu ekleyerek kavurun.",
+      "Sütü azar azar ilave edip pürüzsüz bir sos elde edene kadar karıştırın.",
+      "Sosu tuz ve karabiberle tatlandırın.",
+      "Haşlanmış karnabaharları fırın kabına dizip üzerine sosu gezdirin.",
+      "Rendelenmiş kaşar peynirini serpip 180 derece fırında peynir kızarana kadar pişirin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Karnabahar",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kaşar peyniri",
+        "amount": "100 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Süt",
+        "amount": "yarım su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Un",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Tavuk Sote",
+    "summary": "Tavuk göğsünün renkli biberler ve soğanla birlikte yüksek ateşte kısa sürede sotelendiği pratik bir tavuk yemeği.",
+    "category": "Et-Tavuk",
+    "prep_minutes": 15,
+    "cook_minutes": 20,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍗",
+    "steps": [
+      "Tavuk göğsünü ince şeritler halinde doğrayın.",
+      "Soğanı ve biberleri julyen doğrayın.",
+      "Sarımsağı ince kıyın.",
+      "Tavada sıvı yağı kızdırıp tavukları ekleyin ve rengi dönene kadar pişirin.",
+      "Soğan ve biberleri ekleyip birkaç dakika daha soteleyin.",
+      "Sarımsak, tuz, karabiber ve kekiği ekleyip karıştırın.",
+      "Sebzeler yumuşayınca ocaktan alıp sıcak servis yapın."
+    ],
+    "tips": "Tavuğu yüksek ateşte kısa sürede pişirmek suyunu salmasını önler.",
+    "ingredients": [
+      {
+        "ingredient": "Tavuk göğsü",
+        "amount": "500 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Dolmalık biber",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı biber",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "2 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kekik",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Fırın Tavuk But",
+    "summary": "Tavuk but ve patatesin tek tepside fırınlandığı, az malzemeyle hazırlanan baharatlı bir akşam yemeği.",
+    "category": "Et-Tavuk",
+    "prep_minutes": 15,
+    "cook_minutes": 40,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍗",
+    "steps": [
+      "Fırını 200 derecede ısınmaya bırakın.",
+      "Patatesleri kabuklarını soyup iri doğrayın.",
+      "Soğanı yarım ay şeklinde doğrayın.",
+      "Tavuk butları, patates ve soğanı fırın tepsisine yerleştirin.",
+      "Üzerine zeytinyağı gezdirip tuz, karabiber, toz kırmızı biber ve kekik serpin.",
+      "Malzemeleri elinizle iyice karıştırın.",
+      "Tepsiyi fırına verip tavuklar altın rengi alana kadar pişirin."
+    ],
+    "tips": "Tavuk derisinin çıtır olması için pişirmenin son on dakikasında fırını üstten ızgaraya alabilirsiniz.",
+    "ingredients": [
+      {
+        "ingredient": "Tavuk but",
+        "amount": "4 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patates",
+        "amount": "3 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "3 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Toz kırmızı biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Kekik",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Sucuklu Nohut",
+    "summary": "Sucuk ve nohutun domates soslu bir harçta buluştuğu, kısa sürede sofraya gelen pratik bir yemek.",
+    "category": "Et-Tavuk",
+    "prep_minutes": 10,
+    "cook_minutes": 20,
+    "servings": 2,
+    "difficulty": "kolay",
+    "emoji": "🥘",
+    "steps": [
+      "Sucuğu ince yuvarlak dilimler halinde doğrayın.",
+      "Soğanı küp küp doğrayıp sıvı yağda kavurun.",
+      "Sucuğu ekleyip birkaç dakika kavurun.",
+      "Domatesleri küp küp doğrayıp salçayla birlikte tencereye ekleyin.",
+      "Haşlanmış nohutu ekleyip karıştırın.",
+      "Tuz ve karabiberi ekleyip az su ilave edin.",
+      "Kısık ateşte birkaç dakika daha pişirip servis yapın."
+    ],
+    "tips": "Sucuk tuzlu olduğu için tuzu tadına bakarak ekleyin.",
+    "ingredients": [
+      {
+        "ingredient": "Sucuk",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Nohut",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "yarım su bardağı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "İzgara Köfte",
+    "summary": "Ev yapımı baharatlarla hazırlanan harcın tavada ya da ızgarada pişirildiği klasik bir köfte tarifi.",
+    "category": "Et-Tavuk",
+    "prep_minutes": 20,
+    "cook_minutes": 15,
+    "servings": 6,
+    "difficulty": "orta",
+    "emoji": "🍖",
+    "steps": [
+      "Soğanı rendeleyip suyunu hafifçe süzün.",
+      "Maydanozu ince kıyın.",
+      "Kıymayı geniş bir kaba alıp soğan, maydanoz, galeta unu ve yumurtayı ekleyin.",
+      "Kimyon, tuz ve karabiberi ekleyip harcı iyice yoğurun.",
+      "Harçtan avuç içi büyüklüğünde parçalar alıp köfte şekli verin.",
+      "Köfteleri buzdolabında on beş dakika dinlendirin.",
+      "Tavaya az miktarda sıvı yağ sürüp köfteleri her iki taraf da pişene kadar kızartın."
+    ],
+    "tips": "Köfte harcını dinlendirmek malzemelerin kaynaşmasını ve dağılmamasını sağlar.",
+    "ingredients": [
+      {
+        "ingredient": "Kıyma",
+        "amount": "500 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Galeta unu",
+        "amount": "3 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "yarım demet",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Kimyon",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Ispanaklı Kıyma",
+    "summary": "Kıyma ve ıspanağın pirinçle birlikte kısık ateşte pişirildiği hafif ve doyurucu bir tencere yemeği.",
+    "category": "Et-Tavuk",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🥬",
+    "steps": [
+      "Ispanağı yıkayıp iri doğrayın.",
+      "Soğanı küp küp doğrayıp sıvı yağda kavurun.",
+      "Kıymayı ekleyip rengi dönene kadar kavurun.",
+      "Domates salçasını ekleyip kısa süre kavurun.",
+      "Ispanağı ekleyip yumuşayana kadar karıştırarak pişirin.",
+      "Pirinci, tuz ve karabiberi ekleyip az su ilave edin.",
+      "Kısık ateşte pirinç yumuşayana kadar pişirip servis yapın."
+    ],
+    "tips": "Ispanağın suyunu fazla salmaması için yüksek ateşte kısa süre pişirin.",
+    "ingredients": [
+      {
+        "ingredient": "Kıyma",
+        "amount": "300 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Ispanak",
+        "amount": "500 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "yarım su bardağı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Pirinç",
+        "amount": "2 yemek kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Patlıcanlı Kuşbaşı",
+    "summary": "Kuşbaşı etin patlıcan, biber ve domatesle birlikte yavaşça pişirildiği doyurucu bir tencere yemeği.",
+    "category": "Et-Tavuk",
+    "prep_minutes": 15,
+    "cook_minutes": 35,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🍆",
+    "steps": [
+      "Patlıcanları soyup küp küp doğrayın ve tuzlu suda bekletin.",
+      "Kuşbaşı eti sıvı yağda mühürleyip kavurun.",
+      "Soğanı küp küp doğrayıp ete ekleyin.",
+      "Domates salçasını ekleyip kısa süre kavurun.",
+      "Domatesleri küp küp doğrayıp tencereye ekleyin.",
+      "Üzerini geçecek kadar su ekleyip kısık ateşte et yumuşayana kadar pişirin.",
+      "Patlıcan ve dolmalık biberi ekleyip tuz ve karabiberle tatlandırın.",
+      "Sebzeler yumuşayana kadar pişirip sıcak servis yapın."
+    ],
+    "tips": "Kuşbaşı etin daha çabuk pişmesi için küçük parçalar halinde doğrayın.",
+    "ingredients": [
+      {
+        "ingredient": "Kuşbaşı et",
+        "amount": "500 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patlıcan",
+        "amount": "3 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Dolmalık biber",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Kırmızı Mercimek Çorbası",
+    "summary": "Kırmızı mercimek, soğan ve havuçla hazırlanan, kışın içi ısıtan klasik bir Türk çorbası.",
+    "category": "Bakliyat",
+    "prep_minutes": 10,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍲",
+    "steps": [
+      "Soğanı ve havucu küçük küp doğrayın.",
+      "Sıvı yağı tencerede kızdırıp soğanı pembeleşene kadar kavurun.",
+      "Havuç ve patatesi ekleyip 2 dakika daha kavurun.",
+      "Domates salçasını ekleyip kısa süre kavurun, ardından yıkanmış kırmızı mercimeği ve suyu ilave edin.",
+      "Tuz ve karabiberi ekleyip mercimek yumuşayana kadar kısık ateşte 20 dakika pişirin.",
+      "Blenderdan geçirip pürüzsüz hale getirin, isteğe bağlı limon sıkarak servis edin."
+    ],
+    "tips": "Daha kıvamlı olsun isterseniz suyu azaltıp pişirme süresini biraz uzatabilirsiniz.",
+    "ingredients": [
+      {
+        "ingredient": "Kırmızı mercimek",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Havuç",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patates",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "6 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Kuru Fasulye",
+    "summary": "Kuşbaşı etle kavrulup salçalı sosla pişirilen, pilav eşliğinde servis edilen klasik bir Türk ev yemeği.",
+    "category": "Bakliyat",
+    "prep_minutes": 15,
+    "cook_minutes": 40,
+    "servings": 6,
+    "difficulty": "orta",
+    "emoji": "🍛",
+    "steps": [
+      "Kuru fasulyeyi bir gece önceden bol suda ıslatın.",
+      "Kuşbaşı eti sıvı yağda etin rengi dönene kadar kavurun.",
+      "İnce doğranmış soğanı ekleyip pembeleşene kadar kavurmaya devam edin.",
+      "Domates salçası ve biber salçasını ekleyip kısa süre kavurun.",
+      "Süzülmüş kuru fasulyeyi ve suyu ilave edin.",
+      "Tuz ve karabiberi ekleyip fasulye yumuşayana kadar kısık ateşte 40 dakika pişirin.",
+      "Sıcak servis edin."
+    ],
+    "tips": "Fasulyeyi bir gece önceden ıslatmak pişirme süresini kısaltır ve daha yumuşak olmasını sağlar.",
+    "ingredients": [
+      {
+        "ingredient": "Kuru fasulye",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuşbaşı et",
+        "amount": "200 gr",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Biber salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "4 su bardağı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Zeytinyağlı Barbunya Pilaki",
+    "summary": "Barbunya fasulyesinin havuç ve patatesle zeytinyağında pişirilip soğuk servis edildiği hafif bir yemek.",
+    "category": "Bakliyat",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🫘",
+    "steps": [
+      "Barbunyayı bir gece önceden ıslatıp haşlayın (ya da haşlanmış barbunya kullanın).",
+      "Soğanı ince doğrayıp zeytinyağında hafifçe kavurun.",
+      "Küp doğranmış havuç ve patatesi ekleyip birkaç dakika kavurun.",
+      "Rendelenmiş domatesi, şekeri ve tuzu ekleyip karıştırın.",
+      "Haşlanmış barbunyayı ve suyu ilave edin.",
+      "Kısık ateşte sebzeler yumuşayana kadar 20 dakika pişirin.",
+      "Soğuduktan sonra üzerine doğranmış maydanoz serperek servis edin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Barbunya",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Havuç",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patates",
+        "amount": "1 adet",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "4 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Şeker",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "birkaç dal",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Nohut Yemeği",
+    "summary": "Kuşbaşı etle kavrulan nohutun salçalı sosla pişirildiği, pirinç pilavının vazgeçilmez eşlikçisi olan bir yemek.",
+    "category": "Bakliyat",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🥘",
+    "steps": [
+      "Kuşbaşı eti sıvı yağda kavurun.",
+      "İnce doğranmış soğanı ekleyip pembeleşene kadar kavurmaya devam edin.",
+      "Domates salçasını ekleyip kısa süre kavurun.",
+      "Haşlanmış nohutu ve suyu ilave edin.",
+      "Tuz ve karabiberi ekleyip kısık ateşte 25 dakika pişirin.",
+      "Pilav ile servis edin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Nohut",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuşbaşı et",
+        "amount": "200 gr",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Mercimek Köftesi",
+    "summary": "Kırmızı mercimek ve ince bulgurdan yapılan, baharatlarla lezzetlendirilip elde şekil verilen vejetaryen bir meze.",
+    "category": "Bakliyat",
+    "prep_minutes": 20,
+    "cook_minutes": 15,
+    "servings": 6,
+    "difficulty": "orta",
+    "emoji": "🧆",
+    "steps": [
+      "Kırmızı mercimeği su ile yumuşayana kadar haşlayın.",
+      "Haşlanmış mercimek sıcakken üzerine ince bulguru ekleyip karıştırın ve dinlendirin.",
+      "İnce doğranmış soğanı zeytinyağında pembeleşene kadar kavurun.",
+      "Domates salçasını ve kimyonu ekleyip kısa süre kavurun.",
+      "Bu karışımı mercimek-bulgur harcına ekleyip iyice yoğurun.",
+      "Tuzu ve doğranmış maydanozu ekleyip küçük parçalar halinde şekil verin.",
+      "Köfteleri servis tabağına dizerek sunun."
+    ],
+    "tips": "Köfteleri yoğururken harcı sıkıca bastırırsanız dağılmadan şekil verebilirsiniz.",
+    "ingredients": [
+      {
+        "ingredient": "Kırmızı mercimek",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "İnce bulgur",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "3 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kimyon",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "birkaç dal",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "3 su bardağı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Menemen",
+    "summary": "Domates, biber ve yumurtanın buluştuğu, kahvaltının ve akşamın vazgeçilmez klasik tavası.",
+    "category": "Yumurtalı",
+    "prep_minutes": 10,
+    "cook_minutes": 15,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍳",
+    "steps": [
+      "Kuru soğanı ve yeşil biberi küçük küp küp doğrayın.",
+      "Sıvı yağı tavada kızdırıp soğanı yumuşayana kadar kavurun.",
+      "Yeşil biberi ekleyip birkaç dakika kavurun.",
+      "Domatesleri rendeleyip tavaya ekleyin ve suyunu çekene kadar pişirin.",
+      "Tuz, karabiber ve pul biberi ekleyip karıştırın.",
+      "Yumurtaları kırıp tavaya ekleyin.",
+      "Hafifçe karıştırarak yumurtalar kıvamına gelene kadar pişirin."
+    ],
+    "tips": "Domatesler çok sulu olursa suyunu biraz kısıp koyulaştırın.",
+    "ingredients": [
+      {
+        "ingredient": "Domates",
+        "amount": "3 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yeşil biber",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "4 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Sucuklu Yumurta",
+    "summary": "Kızarmış sucuğun üzerine kırılan yumurtalarla dakikalar içinde hazırlanan doyurucu bir tava yemeği.",
+    "category": "Yumurtalı",
+    "prep_minutes": 5,
+    "cook_minutes": 10,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍳",
+    "steps": [
+      "Sucuğu yuvarlak ince dilimler halinde doğrayın.",
+      "Sıvı yağı tavada ısıtın.",
+      "Sucuk dilimlerini tavaya dizip her iki tarafını kızartın.",
+      "Yumurtaları kırıp sucukların üzerine ekleyin.",
+      "Tuz, karabiber ve pul biberi serpin.",
+      "Yumurta akı pişip sarısı kıvamında kalana kadar pişirin."
+    ],
+    "tips": "Sucuğu önce kendi yağında iyice kızartırsanız lezzeti artar.",
+    "ingredients": [
+      {
+        "ingredient": "Sucuk",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "8 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Kaşarlı Omlet",
+    "summary": "Kaşar peyniriyle zenginleştirilmiş, yumuşacık ve hızlı hazırlanan klasik omlet.",
+    "category": "Yumurtalı",
+    "prep_minutes": 5,
+    "cook_minutes": 8,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🧀",
+    "steps": [
+      "Yumurtaları bir kapta çırpın.",
+      "Süt, tuz ve karabiberi ekleyip karıştırın.",
+      "Kaşar peynirini rendeleyip karışıma ekleyin.",
+      "Tavada tereyağını eritin.",
+      "Yumurta karışımını tavaya dökün.",
+      "Altı pişince katlayıp servis edin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Yumurta",
+        "amount": "8 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kaşar peyniri",
+        "amount": "100 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Süt",
+        "amount": "4 yemek kaşığı",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Çılbır (Yoğurtlu Yumurta)",
+    "summary": "Sarımsaklı yoğurdun üzerine poşe yumurta ve acılı tereyağı gezdirilerek yapılan geleneksel bir lezzet.",
+    "category": "Yumurtalı",
+    "prep_minutes": 10,
+    "cook_minutes": 10,
+    "servings": 2,
+    "difficulty": "orta",
+    "emoji": "🥣",
+    "steps": [
+      "Yoğurdu sarımsak ve tuzla karıştırıp servis kabına alın.",
+      "Geniş bir tencerede suyu kaynatın ve sirkeyi ekleyin.",
+      "Kaynayan suyu kısıp yumurtaları tek tek kırarak suya bırakın.",
+      "Yumurta akı pişince kevgirle alıp süzün.",
+      "Poşe yumurtaları yoğurdun üzerine yerleştirin.",
+      "Tereyağını eritip pul biberle karıştırın.",
+      "Sıcak tereyağını yumurta ve yoğurdun üzerine gezdirin."
+    ],
+    "tips": "Yumurtaları kırmadan önce suya birkaç damla sirke eklemek toparlanmasına yardımcı olur.",
+    "ingredients": [
+      {
+        "ingredient": "Yumurta",
+        "amount": "4 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yoğurt",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "1 diş",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tereyağı",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "1 litre",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sirke",
+        "amount": "1 yemek kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Ispanaklı Yumurta",
+    "summary": "Soğanla kavrulan ıspanağın üzerine kırılan yumurtalarla pişirilen hafif ve doyurucu bir tava yemeği.",
+    "category": "Yumurtalı",
+    "prep_minutes": 10,
+    "cook_minutes": 15,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍳",
+    "steps": [
+      "Kuru soğanı ince ince doğrayın.",
+      "Sıvı yağı tavada kızdırıp soğanı kavurun.",
+      "Sarımsağı ekleyip birkaç saniye kavurun.",
+      "Ispanağı yıkayıp doğrayın ve tavaya ekleyin.",
+      "Ispanak yumuşayana kadar orta ateşte pişirin.",
+      "Tuz ve karabiberi ekleyin.",
+      "Yumurtaları kırıp tavaya ekleyin ve kıvamına gelene kadar pişirin."
+    ],
+    "tips": "Ispanağın suyunu iyice çekmesini bekleyin, yoksa yumurta sulanır.",
+    "ingredients": [
+      {
+        "ingredient": "Ispanak",
+        "amount": "300 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sarımsak",
+        "amount": "1 diş",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "4 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "yarım çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Çoban Salatası",
+    "summary": "Taze sebzelerle hazırlanan, sofraların vazgeçilmezi klasik bir Türk salatası.",
+    "category": "Salata",
+    "prep_minutes": 15,
+    "cook_minutes": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🍅",
+    "steps": [
+      "Domatesleri küçük küpler halinde doğrayın.",
+      "Salatalık ve yeşil biberi de aynı büyüklükte doğrayın.",
+      "Kuru soğanı ince ince kıyın.",
+      "Maydanozu ince kıyıp sebzelerin üzerine ekleyin.",
+      "Zeytinyağı, limon suyu ve tuzu ekleyip karıştırın, hemen servis edin."
+    ],
+    "tips": "Salatayı servisten hemen önce karıştırın, sebzeler suyunu bırakmasın.",
+    "ingredients": [
+      {
+        "ingredient": "Domates",
+        "amount": "3 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Salatalık",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yeşil biber",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet (küçük boy)",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "yarım demet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "3 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Mevsim Salatası",
+    "summary": "Renkli mevsim sebzeleriyle hazırlanan hafif ve çıtır bir salata.",
+    "category": "Salata",
+    "prep_minutes": 15,
+    "cook_minutes": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🥬",
+    "steps": [
+      "Marulu yıkayıp elinizle küçük parçalara ayırın.",
+      "Havucu rendeleyin.",
+      "Kırmızı lahanayı ince ince doğrayın.",
+      "Domates ve salatalığı küp küp doğrayın.",
+      "Tüm sebzeleri geniş bir kapta karıştırın.",
+      "Üzerine zeytinyağı, limon suyu ve tuzu ekleyip servis edin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Marul",
+        "amount": "yarım adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Havuç",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı lahana",
+        "amount": "150 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Salatalık",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Ton Balıklı Salata",
+    "summary": "Ton balığı ve haşlanmış yumurtayla hazırlanan doyurucu, protein açısından zengin bir salata.",
+    "category": "Salata",
+    "prep_minutes": 15,
+    "cook_minutes": 10,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🐟",
+    "steps": [
+      "Yumurtaları haşlayın, soğuyunca kabuklarını soyup dilimleyin.",
+      "Marulu yıkayıp küçük parçalara ayırın.",
+      "Domates ve salatalığı küp küp doğrayın.",
+      "Ton balığının suyunu süzün.",
+      "Tüm malzemeleri geniş bir kapta karıştırın.",
+      "Üzerine zeytinyağı, limon suyu ve tuzu ekleyip servis edin."
+    ],
+    "tips": "Ton balığının suyunu iyice süzün, salata sulanmasın.",
+    "ingredients": [
+      {
+        "ingredient": "Ton balığı",
+        "amount": "1 kutu (150 gr)",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Marul",
+        "amount": "yarım adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Salatalık",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Siyah zeytin",
+        "amount": "10 adet",
+        "is_optional": true
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Nohutlu Salata",
+    "summary": "Haşlanmış nohutla hazırlanan, doyurucu ve protein değeri yüksek bir salata.",
+    "category": "Salata",
+    "prep_minutes": 15,
+    "cook_minutes": 0,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🫘",
+    "steps": [
+      "Haşlanmış nohutları süzüp geniş bir kaseye alın.",
+      "Domates ve salatalığı küçük küpler halinde doğrayın.",
+      "Taze soğanı ince ince doğrayın.",
+      "Maydanozu ince kıyın.",
+      "Tüm malzemeleri nohutla birlikte karıştırın.",
+      "Üzerine zeytinyağı, limon suyu, tuz ve pul biberi ekleyip karıştırın."
+    ],
+    "tips": "Konserve nohut kullanırsanız suyunu iyice durulayın.",
+    "ingredients": [
+      {
+        "ingredient": "Nohut",
+        "amount": "2 su bardağı (haşlanmış)",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Salatalık",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Taze soğan",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "yarım demet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "3 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Kısır",
+    "summary": "Bulgur, salça ve taze otlarla yoğrularak hazırlanan doyurucu bir mezze salatası.",
+    "category": "Salata",
+    "prep_minutes": 25,
+    "cook_minutes": 0,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🌾",
+    "steps": [
+      "İnce bulguru geniş bir kaba alın, üzerine domates salçası ve biber salçasını ekleyin.",
+      "Kaynar su ilave edip karıştırın, kabı kapatarak 15 dakika dinlendirin.",
+      "Taze soğanı ince ince kıyın.",
+      "Maydanoz ve taze naneyi ince doğrayın.",
+      "Bulgur şişince üzerine soğan, maydanoz ve naneyi ekleyin.",
+      "Zeytinyağı, limon suyu ve tuzu ekleyip iyice yoğurun.",
+      "İsteğe göre kırmızı pul biber serpip servis edin."
+    ],
+    "tips": "Bulguru kaynar suyla haşlamayın, sadece ıslatıp dinlendirin ki lapa olmasın.",
+    "ingredients": [
+      {
+        "ingredient": "İnce bulgur",
+        "amount": "1,5 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Domates salçası",
+        "amount": "2 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Biber salçası",
+        "amount": "1 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Taze soğan",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "1 demet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Taze nane",
+        "amount": "birkaç dal",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Limon",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Zeytinyağı",
+        "amount": "4 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kırmızı pul biber",
+        "amount": "1 çay kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Peynirli Poğaça",
+    "summary": "Yoğurtla hazırlanan, mayasız ve pratik peynirli poğaça tarifi.",
+    "category": "Hamur işi",
+    "prep_minutes": 20,
+    "cook_minutes": 20,
+    "servings": 6,
+    "difficulty": "kolay",
+    "emoji": "🥐",
+    "steps": [
+      "Yoğurt, sıvı yağ, 1 yumurta ve tuzu bir kapta karıştırın.",
+      "Kabartma tozunu katılmış una azar azar ekleyip yumuşak bir hamur yoğurun.",
+      "Hamurdan ceviz büyüklüğünde parçalar koparın.",
+      "Parçaları yassıltıp içine ufalanmış beyaz peyniri koyup kapatın.",
+      "Poğaçaları yağlı kağıt serili tepsiye dizin.",
+      "Üzerlerine çırpılmış yumurta sürüp susam serpin.",
+      "200 derece fırında 20 dakika pişirin."
+    ],
+    "tips": "Poğaçaları pişirmeden önce buzdolabında 10 dakika dinlendirirseniz daha kabarık olur.",
+    "ingredients": [
+      {
+        "ingredient": "Un",
+        "amount": "3 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yoğurt",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "1/2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kabartma tozu",
+        "amount": "1 paket",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Beyaz peynir",
+        "amount": "150 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Susam",
+        "amount": "1 yemek kaşığı",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Kıymalı Çıtır Börek",
+    "summary": "Kıymalı iç harcıyla hazırlanan, dışı çıtır çıtır kızarmış pratik börek tarifi.",
+    "category": "Hamur işi",
+    "prep_minutes": 20,
+    "cook_minutes": 15,
+    "servings": 4,
+    "difficulty": "kolay",
+    "emoji": "🥟",
+    "steps": [
+      "Kuru soğanı küçük küp küp doğrayın.",
+      "Kıymayı soğanla birlikte tuz ve karabiber ekleyerek kavurun.",
+      "Kavrulan kıymayı ocaktan alıp rendelenmiş kaşar peyniriyle karıştırın.",
+      "Yufkaları üçgen şeklinde kesin.",
+      "Her yufka parçasının geniş kenarına harçtan koyup sarın.",
+      "Ucunu çırpılmış yumurtayla yapıştırın.",
+      "Sıvı yağda her iki yüzü altın rengi olana kadar kızartın."
+    ],
+    "tips": "Yufkaların kurumaması için üzerini nemli bir bezle örtün.",
+    "ingredients": [
+      {
+        "ingredient": "Yufka",
+        "amount": "6 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kıyma",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kaşar peyniri",
+        "amount": "100 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Ispanaklı Börek",
+    "summary": "Taze ıspanak ve beyaz peynirle hazırlanan, fırında pişen nefis börek tarifi.",
+    "category": "Hamur işi",
+    "prep_minutes": 15,
+    "cook_minutes": 25,
+    "servings": 4,
+    "difficulty": "orta",
+    "emoji": "🥧",
+    "steps": [
+      "Ispanağı yıkayıp ince doğrayın.",
+      "Kuru soğanı küçük küp küp doğrayıp ispanakla karıştırın.",
+      "Beyaz peyniri ufalayıp karışıma ekleyin, tuz ve karabiber serpin.",
+      "Bir kapta yumurta ve sıvı yağı çırpın.",
+      "Yufkaları yağlanmış tepsiye serip aralarına ispanaklı harcı yayın.",
+      "Üzerine yumurta-yağ karışımını gezdirin.",
+      "180 derece fırında 25 dakika pişirin."
+    ],
+    "tips": "",
+    "ingredients": [
+      {
+        "ingredient": "Yufka",
+        "amount": "4 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Ispanak",
+        "amount": "500 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Beyaz peynir",
+        "amount": "150 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1/2 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  },
+  {
+    "title": "Patatesli Gözleme",
+    "summary": "Haşlanmış patatesle hazırlanan, sacda pişirilen pratik gözleme tarifi.",
+    "category": "Hamur işi",
+    "prep_minutes": 25,
+    "cook_minutes": 15,
+    "servings": 2,
+    "difficulty": "kolay",
+    "emoji": "🫓",
+    "steps": [
+      "Unu, suyu ve tuzu yoğurup yumuşak bir hamur elde edin.",
+      "Hamuru bezelere ayırıp 20 dakika dinlendirin.",
+      "Patatesleri haşlayıp ezin, kuru soğanı ince doğrayıp katın.",
+      "Harca tuz ve karabiber ekleyin.",
+      "Bezeleri ince yufka şeklinde açın.",
+      "Yufkanın yarısına patates harcını ve kaşar peynirini yayıp katlayın.",
+      "Sıcak sac veya tavada her iki tarafını kızartın."
+    ],
+    "tips": "Hamuru dinlendirmek açmayı kolaylaştırır.",
+    "ingredients": [
+      {
+        "ingredient": "Un",
+        "amount": "3 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Su",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Patates",
+        "amount": "3 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kuru soğan",
+        "amount": "1 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Karabiber",
+        "amount": "1/2 çay kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "4 yemek kaşığı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Kaşar peyniri",
+        "amount": "80 gr",
+        "is_optional": true
+      }
+    ]
+  },
+  {
+    "title": "Su Böreği",
+    "summary": "Katman katman yufka ve peynirli harçla hazırlanan geleneksel su böreği tarifi.",
+    "category": "Hamur işi",
+    "prep_minutes": 20,
+    "cook_minutes": 35,
+    "servings": 6,
+    "difficulty": "orta",
+    "emoji": "🧀",
+    "steps": [
+      "Geniş bir tencerede suyu kaynatıp tuz ekleyin.",
+      "Yufkaları teker teker kaynar suda 1-2 dakika haşlayıp soğuk suya alın.",
+      "Haşlanmış yufkaları süzüp yağlanmış fırın tepsisine serin.",
+      "Beyaz peyniri ufalayıp kıyılmış maydanozla karıştırın.",
+      "Yufka katları arasına peynirli harcı serpiştirin.",
+      "Yumurta, süt ve sıvı yağı çırpıp böreğin üzerine dökün.",
+      "180 derece fırında 35 dakika pişirin."
+    ],
+    "tips": "Yufkaları haşlarken birbirine yapışmaması için tek tek suya atın.",
+    "ingredients": [
+      {
+        "ingredient": "Yufka",
+        "amount": "5 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Yumurta",
+        "amount": "2 adet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Süt",
+        "amount": "1 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Beyaz peynir",
+        "amount": "200 gr",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Maydanoz",
+        "amount": "1 demet",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Sıvı yağ",
+        "amount": "1/2 su bardağı",
+        "is_optional": false
+      },
+      {
+        "ingredient": "Tuz",
+        "amount": "1 çay kaşığı",
+        "is_optional": false
+      }
+    ]
+  }
+]

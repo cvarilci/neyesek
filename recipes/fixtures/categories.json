@@ -1,0 +1,11 @@
+[
+  {"name": "Çorba", "emoji": "🍲", "order": 1},
+  {"name": "Tek tava", "emoji": "🥘", "order": 2},
+  {"name": "Makarna", "emoji": "🍝", "order": 3},
+  {"name": "Sebze yemeği", "emoji": "🥦", "order": 4},
+  {"name": "Et-Tavuk", "emoji": "🍗", "order": 5},
+  {"name": "Bakliyat", "emoji": "🫘", "order": 6},
+  {"name": "Yumurtalı", "emoji": "🥚", "order": 7},
+  {"name": "Salata", "emoji": "🥗", "order": 8},
+  {"name": "Hamur işi", "emoji": "🥟", "order": 9}
+]

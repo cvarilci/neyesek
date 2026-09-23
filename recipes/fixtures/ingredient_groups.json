@@ -1,0 +1,10 @@
+[
+  {"name": "Sebze", "order": 1},
+  {"name": "Meyve", "order": 2},
+  {"name": "Et-Tavuk-Balık", "order": 3},
+  {"name": "Süt ürünleri", "order": 4},
+  {"name": "Bakliyat", "order": 5},
+  {"name": "Tahıl-Hamur", "order": 6},
+  {"name": "Baharat-Sos", "order": 7},
+  {"name": "Diğer", "order": 8}
+]

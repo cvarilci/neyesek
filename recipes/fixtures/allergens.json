@@ -1,0 +1,13 @@
+[
+  {"code": "gluten", "name": "Gluten", "emoji": "🌾"},
+  {"code": "sut", "name": "Süt", "emoji": "🥛"},
+  {"code": "yumurta", "name": "Yumurta", "emoji": "🥚"},
+  {"code": "kuruyemis", "name": "Kuruyemiş", "emoji": "🥜"},
+  {"code": "yer_fistigi", "name": "Yer Fıstığı", "emoji": "🥜"},
+  {"code": "balik", "name": "Balık", "emoji": "🐟"},
+  {"code": "kabuklu_deniz", "name": "Kabuklu Deniz Ürünleri", "emoji": "🦐"},
+  {"code": "soya", "name": "Soya", "emoji": "🌱"},
+  {"code": "susam", "name": "Susam", "emoji": "🌰"},
+  {"code": "kereviz", "name": "Kereviz", "emoji": "🥬"},
+  {"code": "hardal", "name": "Hardal", "emoji": "🟡"}
+]
