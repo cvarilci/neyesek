@@ -4,7 +4,33 @@
   var SELECTED_KEY = "neyesek:selected";
   var SHOPPING_KEY = "neyesek:shopping";
 
-  // ---- localStorage yardımcıları ----------------------------------------
+  // ---- Genel yardımcılar --------------------------------------------------
+
+  function isAuthenticated() {
+    return document.body && document.body.dataset.authenticated === "true";
+  }
+
+  function getCookie(name) {
+    var match = document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)");
+    return match ? decodeURIComponent(match[2]) : null;
+  }
+
+  function postJSON(url, data) {
+    return fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRFToken": getCookie("csrftoken") || "",
+      },
+      body: JSON.stringify(data || {}),
+    }).then(function (response) {
+      return response.json().then(function (json) {
+        return { ok: response.ok, data: json };
+      });
+    });
+  }
+
+  // ---- localStorage yardımcıları (üye olmayan kullanıcılar için) ---------
 
   function readJSON(key, fallback) {
     try {
@@ -46,12 +72,25 @@
   function updateShoppingBadge() {
     var badge = document.getElementById("shopping-count");
     if (!badge) return;
+
+    if (isAuthenticated()) {
+      fetch("/alisveris-listesi/veri/")
+        .then(function (response) { return response.ok ? response.json() : { items: [] }; })
+        .then(function (data) {
+          setBadgeCount(badge, (data.items || []).filter(function (i) { return !i.checked; }).length);
+        })
+        .catch(function () {});
+      return;
+    }
+
     var items = getShopping();
-    var remaining = items.filter(function (item) {
-      return !item.checked;
-    }).length;
-    if (remaining > 0) {
-      badge.textContent = String(remaining);
+    var remaining = items.filter(function (item) { return !item.checked; }).length;
+    setBadgeCount(badge, remaining);
+  }
+
+  function setBadgeCount(badge, count) {
+    if (count > 0) {
+      badge.textContent = String(count);
       badge.hidden = false;
     } else {
       badge.hidden = true;
@@ -294,6 +333,44 @@
       window.location.href = "/tarifler/?" + params.toString();
     });
 
+    // ---- Dolabım: kaydet / başla (yalnızca giriş yapmış kullanıcı) ----
+
+    var pantryStart = document.getElementById("pantry-start");
+    var pantrySave = document.getElementById("pantry-save");
+    var pantryStatus = document.getElementById("pantry-status");
+
+    if (pantryStart) {
+      pantryStart.addEventListener("click", function () {
+        fetch("/dolabim/veri/")
+          .then(function (response) { return response.json(); })
+          .then(function (data) {
+            var ingredients = data.ingredients || [];
+            setSelected(ingredients.map(function (i) { return { slug: i.slug, name: i.name }; }));
+            renderChips();
+            if (pantryStatus) {
+              pantryStatus.textContent = ingredients.length
+                ? "Dolabındaki " + ingredients.length + " malzeme seçildi."
+                : "Dolabın henüz boş.";
+            }
+          });
+      });
+    }
+
+    if (pantrySave) {
+      pantrySave.addEventListener("click", function () {
+        var slugs = getSelected().map(function (item) { return item.slug; });
+        postJSON("/dolabim/kaydet/", { slugs: slugs }).then(function (result) {
+          if (pantryStatus) {
+            pantryStatus.textContent = result.ok
+              ? "Dolabın kaydedildi (" + result.data.saved + " malzeme)."
+              : "Kaydedilemedi, tekrar dener misin?";
+          }
+        });
+      });
+    }
+
+    window.addEventListener("neyesek:merged", renderChips);
+
     renderChips();
   }
 
@@ -312,6 +389,15 @@
     }
 
     addBtn.addEventListener("click", function () {
+      if (isAuthenticated()) {
+        postJSON("/alisveris-listesi/ekle/", { items: missingItems }).then(function () {
+          updateShoppingBadge();
+          addBtn.textContent = "Listeye eklendi ✓";
+          addBtn.disabled = true;
+        });
+        return;
+      }
+
       var shopping = getShopping();
       var existingSlugs = shopping.map(function (item) { return item.slug; });
 
@@ -329,6 +415,24 @@
     });
   }
 
+  // ---- Favori (♥) butonları: sonuç kartları ve tarif detayı --------------
+
+  function initFavoriteButtons() {
+    document.querySelectorAll(".favorite-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var slug = btn.dataset.recipeSlug;
+        postJSON("/favori/" + encodeURIComponent(slug) + "/degistir/", {}).then(function (result) {
+          if (!result.ok) return;
+          var active = result.data.is_favorited;
+          btn.classList.toggle("favorite-btn--active", active);
+          btn.setAttribute("aria-pressed", active ? "true" : "false");
+          btn.setAttribute("aria-label", active ? "Favorilerden çıkar" : "Favorilere ekle");
+          btn.textContent = active ? "♥" : "♡";
+        });
+      });
+    });
+  }
+
   // ---- Alışveriş listesi sayfası ------------------------------------------
 
   function initShoppingListPage() {
@@ -339,8 +443,7 @@
     var copyBtn = document.getElementById("copy-list");
     var clearBtn = document.getElementById("clear-list");
 
-    function render() {
-      var items = getShopping();
+    function renderItems(items) {
       list.textContent = "";
 
       if (items.length === 0) {
@@ -359,7 +462,7 @@
         checkbox.type = "checkbox";
         checkbox.checked = !!item.checked;
         checkbox.addEventListener("change", function () {
-          toggleChecked(item.slug, checkbox.checked);
+          onToggle(item, checkbox.checked);
         });
         label.appendChild(checkbox);
 
@@ -375,7 +478,7 @@
         removeBtn.setAttribute("aria-label", item.name + " öğesini sil");
         removeBtn.textContent = "×";
         removeBtn.addEventListener("click", function () {
-          removeItem(item.slug);
+          onRemove(item);
         });
         li.appendChild(removeBtn);
 
@@ -383,31 +486,73 @@
       });
     }
 
-    function toggleChecked(slug, checked) {
-      var items = getShopping().map(function (item) {
-        if (item.slug === slug) {
-          return { slug: item.slug, name: item.name, checked: checked };
-        }
-        return item;
-      });
-      setShopping(items);
-      updateShoppingBadge();
-      render();
-    }
+    var onToggle, onRemove, onCopyText, onClear, loadAndRender;
 
-    function removeItem(slug) {
-      var items = getShopping().filter(function (item) {
-        return item.slug !== slug;
-      });
-      setShopping(items);
-      updateShoppingBadge();
-      render();
+    if (isAuthenticated()) {
+      loadAndRender = function () {
+        fetch("/alisveris-listesi/veri/")
+          .then(function (response) { return response.json(); })
+          .then(function (data) {
+            var items = (data.items || []).map(function (i) {
+              return { id: i.id, name: i.text, checked: i.checked };
+            });
+            renderItems(items);
+          });
+      };
+      onToggle = function (item) {
+        postJSON("/alisveris-listesi/" + item.id + "/isaretle/", {}).then(function () {
+          updateShoppingBadge();
+          loadAndRender();
+        });
+      };
+      onRemove = function (item) {
+        postJSON("/alisveris-listesi/" + item.id + "/sil/", {}).then(function () {
+          updateShoppingBadge();
+          loadAndRender();
+        });
+      };
+      onClear = function () {
+        postJSON("/alisveris-listesi/temizle/", {}).then(function () {
+          updateShoppingBadge();
+          loadAndRender();
+        });
+      };
+    } else {
+      loadAndRender = function () {
+        var items = getShopping().map(function (i) {
+          return { id: i.slug, name: i.name, checked: i.checked };
+        });
+        renderItems(items);
+      };
+      onToggle = function (item, checked) {
+        var items = getShopping().map(function (i) {
+          if (i.slug === item.id) return { slug: i.slug, name: i.name, checked: checked };
+          return i;
+        });
+        setShopping(items);
+        updateShoppingBadge();
+        loadAndRender();
+      };
+      onRemove = function (item) {
+        var items = getShopping().filter(function (i) { return i.slug !== item.id; });
+        setShopping(items);
+        updateShoppingBadge();
+        loadAndRender();
+      };
+      onClear = function () {
+        setShopping([]);
+        updateShoppingBadge();
+        loadAndRender();
+      };
     }
 
     if (copyBtn) {
       copyBtn.addEventListener("click", function () {
-        var items = getShopping();
-        var text = items.map(function (item) { return "- " + item.name; }).join("\n");
+        var names = Array.prototype.map.call(
+          list.querySelectorAll(".shopping-list__item span"),
+          function (span) { return "- " + span.textContent; }
+        );
+        var text = names.join("\n");
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(text).then(function () {
             copyBtn.textContent = "Kopyalandı ✓";
@@ -418,20 +563,36 @@
     }
 
     if (clearBtn) {
-      clearBtn.addEventListener("click", function () {
-        setShopping([]);
-        updateShoppingBadge();
-        render();
-      });
+      clearBtn.addEventListener("click", onClear);
     }
 
-    render();
+    loadAndRender();
+  }
+
+  // ---- Girişten sonra localStorage verisini hesaba bir kerelik aktar -----
+
+  function initMergeOnLogin() {
+    if (!isAuthenticated()) return;
+    var selected = getSelected();
+    var shopping = getShopping();
+    if (selected.length === 0 && shopping.length === 0) return;
+
+    postJSON("/hesap/birlestir/", { selected: selected, shopping: shopping }).then(function (result) {
+      if (result.ok) {
+        setSelected([]);
+        setShopping([]);
+        updateShoppingBadge();
+        window.dispatchEvent(new CustomEvent("neyesek:merged"));
+      }
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    initMergeOnLogin();
     updateShoppingBadge();
     initHomePage();
     initDetailPage();
+    initFavoriteButtons();
     initShoppingListPage();
   });
 })();

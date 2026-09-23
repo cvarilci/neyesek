@@ -40,7 +40,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
+    "allauth",
+    "allauth.account",
     "recipes",
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -50,6 +54,7 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "allauth.account.middleware.AccountMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
@@ -155,3 +160,28 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Tıklama kaçırma (clickjacking) koruması
 X_FRAME_OPTIONS = "DENY"
+
+
+# Kimlik doğrulama (django-allauth) — Faz 4
+# https://docs.allauth.org/en/latest/account/configuration.html
+
+SITE_ID = 1
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+]
+
+ACCOUNT_LOGIN_METHODS = {"email"}
+ACCOUNT_SIGNUP_FIELDS = ["email*", "password1*", "password2*"]
+ACCOUNT_SIGNUP_FORM_CLASS = "accounts.forms.NameSignupForm"
+# Prototip: e-posta doğrulaması zorunlu değil ama gönderilir (konsola yazılır).
+ACCOUNT_EMAIL_VERIFICATION = "optional"
+ACCOUNT_UNIQUE_EMAIL = True
+
+LOGIN_URL = "account_login"
+LOGIN_REDIRECT_URL = "recipes:home"
+ACCOUNT_LOGOUT_REDIRECT_URL = "recipes:home"
+
+# Geliştirmede gerçek e-posta servisi yok; e-postalar konsola yazılır.
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

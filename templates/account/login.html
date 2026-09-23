@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Giriş yap — Neyesek{% endblock %}
+
+{% block content %}
+<section class="auth-card">
+    <h1>Giriş yap</h1>
+    <p class="hint">Hesabın yok mu? <a href="{% url 'account_signup' %}">Hemen kaydol</a>.</p>
+
+    <form method="post" action="{% url 'account_login' %}" class="auth-form">
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+        <ul class="form-errors">
+            {% for error in form.non_field_errors %}<li>{{ error }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+
+        <label for="id_login">E-posta</label>
+        {{ form.login }}
+        {% for error in form.login.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+
+        <label for="id_password">Parola</label>
+        {{ form.password }}
+        {% for error in form.password.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+
+        <label class="checkbox-label">{{ form.remember }} Beni hatırla</label>
+
+        {{ redirect_field }}
+
+        <button type="submit" class="btn-primary">Giriş yap</button>
+    </form>
+
+    <p class="hint"><a href="{% url 'account_reset_password' %}">Parolamı unuttum</a></p>
+</section>
+{% endblock %}

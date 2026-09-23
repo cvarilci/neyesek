@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Favorilerim — Neyesek{% endblock %}
+
+{% block content %}
+{% if login_required %}
+<section class="empty-state">
+    <h1>Favorilerini görmek için giriş yapmalısın</h1>
+    <p>Beğendiğin tarifleri kaydetmek için önce bir hesap oluştur ya da giriş yap.</p>
+    <a class="btn-primary" href="{% url 'account_login' %}">Giriş yap</a>
+</section>
+{% else %}
+<section class="results-header">
+    <h1>Favorilerim</h1>
+    <a class="btn-secondary" href="{% url 'recipes:home' %}">Ana sayfaya dön</a>
+</section>
+
+{% if favorites %}
+<div class="recipe-cards">
+    {% for favorite in favorites %}
+    {% include "recipes/_recipe_card.html" with recipe=favorite.recipe show_favorite=True is_favorited=True m_param="" %}
+    {% endfor %}
+</div>
+{% else %}
+<section class="empty-state">
+    <h1>Henüz favori tarifin yok</h1>
+    <p>Beğendiğin bir tarifin kartındaki ♡ işaretine dokunarak buraya ekleyebilirsin.</p>
+    <a class="btn-primary" href="{% url 'recipes:home' %}">Tarif bulmaya git</a>
+</section>
+{% endif %}
+{% endif %}
+{% endblock %}

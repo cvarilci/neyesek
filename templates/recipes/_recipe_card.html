@@ -1,0 +1,29 @@
+{% comment %}
+Bağlam: recipe, m_param, missing_ingredients (opsiyonel, "az eksik" kartları için),
+show_favorite (bool). Favori durumu is_favorited olarak doğrudan verilebilir,
+verilmezse recipe.id'nin favorite_recipe_ids kümesinde olup olmadığına bakılır.
+{% endcomment %}
+<div class="recipe-card">
+    {% if show_favorite %}
+    <button
+        type="button"
+        class="favorite-btn{% if is_favorited or recipe.id in favorite_recipe_ids %} favorite-btn--active{% endif %}"
+        data-recipe-slug="{{ recipe.slug }}"
+        aria-pressed="{% if is_favorited or recipe.id in favorite_recipe_ids %}true{% else %}false{% endif %}"
+        aria-label="{% if is_favorited or recipe.id in favorite_recipe_ids %}Favorilerden çıkar{% else %}Favorilere ekle{% endif %}"
+    >{% if is_favorited or recipe.id in favorite_recipe_ids %}♥{% else %}♡{% endif %}</button>
+    {% endif %}
+    <a class="recipe-card__link" href="{% url 'recipes:recipe_detail' recipe.slug %}?m={{ m_param }}">
+        <span class="recipe-card__emoji">{{ recipe.emoji }}</span>
+        <h3>{{ recipe.title }}</h3>
+        <p class="recipe-card__meta">⏱ {{ recipe.total_minutes }} dk · {{ recipe.category.name }}</p>
+        {% if missing_ingredients %}
+        <p class="recipe-card__missing">
+            Eksik:
+            {% for ingredient in missing_ingredients %}{{ ingredient.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </p>
+        {% else %}
+        <p class="recipe-card__summary">{{ recipe.summary }}</p>
+        {% endif %}
+    </a>
+</div>

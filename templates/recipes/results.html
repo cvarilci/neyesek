@@ -27,12 +27,7 @@
     <h2><span class="badge-mint">Hemen yapabilirsin</span></h2>
     <div class="recipe-cards">
         {% for match in ready %}
-        <a class="recipe-card" href="{% url 'recipes:recipe_detail' match.recipe.slug %}?m={{ m_param }}">
-            <span class="recipe-card__emoji">{{ match.recipe.emoji }}</span>
-            <h3>{{ match.recipe.title }}</h3>
-            <p class="recipe-card__meta">⏱ {{ match.recipe.total_minutes }} dk · {{ match.recipe.category.name }}</p>
-            <p class="recipe-card__summary">{{ match.recipe.summary }}</p>
-        </a>
+        {% include "recipes/_recipe_card.html" with recipe=match.recipe show_favorite=request.user.is_authenticated %}
         {% endfor %}
     </div>
 </section>
@@ -43,15 +38,7 @@
     <h2><span class="badge-peach">1–3 malzeme alırsan</span></h2>
     <div class="recipe-cards">
         {% for match in almost %}
-        <a class="recipe-card" href="{% url 'recipes:recipe_detail' match.recipe.slug %}?m={{ m_param }}">
-            <span class="recipe-card__emoji">{{ match.recipe.emoji }}</span>
-            <h3>{{ match.recipe.title }}</h3>
-            <p class="recipe-card__meta">⏱ {{ match.recipe.total_minutes }} dk · {{ match.recipe.category.name }}</p>
-            <p class="recipe-card__missing">
-                Eksik:
-                {% for ingredient in match.missing_ingredients %}{{ ingredient.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
-            </p>
-        </a>
+        {% include "recipes/_recipe_card.html" with recipe=match.recipe missing_ingredients=match.missing_ingredients show_favorite=request.user.is_authenticated %}
         {% endfor %}
     </div>
 </section>

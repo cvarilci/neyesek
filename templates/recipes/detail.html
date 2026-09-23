@@ -7,6 +7,15 @@
     <a class="btn-secondary" href="{% url 'recipes:recipe_results' %}?m={{ m_param }}">← Sonuçlara dön</a>
 
     <header class="recipe-detail__header">
+        {% if request.user.is_authenticated %}
+        <button
+            type="button"
+            class="favorite-btn favorite-btn--large{% if is_favorited %} favorite-btn--active{% endif %}"
+            data-recipe-slug="{{ recipe.slug }}"
+            aria-pressed="{% if is_favorited %}true{% else %}false{% endif %}"
+            aria-label="{% if is_favorited %}Favorilerden çıkar{% else %}Favorilere ekle{% endif %}"
+        >{% if is_favorited %}♥{% else %}♡{% endif %}</button>
+        {% endif %}
         <span class="recipe-detail__emoji">{{ recipe.emoji }}</span>
         <h1>{{ recipe.title }}</h1>
         <p>{{ recipe.summary }}</p>

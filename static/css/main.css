@@ -51,7 +51,9 @@ a {
 
 .site-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 8px 20px;
   padding: 16px 20px;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -134,6 +136,13 @@ a {
 
 .site-header {
   justify-content: space-between;
+}
+
+.site-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
 }
 
 .site-header__link {
@@ -674,4 +683,128 @@ input:focus-visible {
 
 .error-page__emoji {
   font-size: 3.5rem;
+}
+
+/* ---- Kimlik doğrulama formları ---- */
+
+.auth-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 24px;
+  max-width: 420px;
+  margin: 24px auto;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.auth-form label {
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.auth-form .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.auth-form .checkbox-label input {
+  width: 20px;
+  height: 20px;
+}
+
+.auth-form button {
+  margin-top: 20px;
+}
+
+.field-error {
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin: 2px 0 0;
+}
+
+.form-errors {
+  background: var(--surface-tint);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  margin: 0;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ---- Favori butonu ---- */
+
+.favorite-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.favorite-btn--active {
+  background: var(--surface-tint);
+}
+
+.recipe-card {
+  position: relative;
+}
+
+.recipe-card .favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+}
+
+.recipe-card__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.favorite-btn--large {
+  font-size: 1.75rem;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+/* ---- Dolabım butonları ---- */
+
+.pantry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
 }

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Çıkış yap — Neyesek{% endblock %}
+
+{% block content %}
+<section class="auth-card">
+    <h1>Çıkış yapmak istediğine emin misin?</h1>
+    <form method="post" action="{% url 'account_logout' %}" class="auth-form">
+        {% csrf_token %}
+        {{ redirect_field }}
+        <button type="submit" class="btn-primary">Evet, çıkış yap</button>
+    </form>
+    <p class="hint"><a href="{% url 'recipes:home' %}">Vazgeç, ana sayfaya dön</a></p>
+</section>
+{% endblock %}

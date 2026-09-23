@@ -25,6 +25,14 @@
 
     <div id="selected-chips" class="chip-list" aria-live="polite"></div>
 
+    {% if request.user.is_authenticated %}
+    <div class="pantry-actions">
+        <button type="button" id="pantry-start" class="btn-secondary">Dolabımdan başla</button>
+        <button type="button" id="pantry-save" class="btn-secondary">Dolabımı kaydet</button>
+        <span id="pantry-status" class="hint" aria-live="polite"></span>
+    </div>
+    {% endif %}
+
     <div class="popular-ingredients">
         {% for group in groups %}
             {% if group.browsable_ingredients %}

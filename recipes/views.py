@@ -2,6 +2,8 @@ from django.db.models import Prefetch
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render
 
+from accounts.models import Favorite
+
 from . import services
 from .models import Category, Ingredient, IngredientGroup, Recipe
 
@@ -83,6 +85,12 @@ def recipe_results(request):
             selected_ids, max_minutes=max_minutes, category=category
         )
 
+    favorite_recipe_ids = set()
+    if request.user.is_authenticated:
+        favorite_recipe_ids = set(
+            Favorite.objects.filter(user=request.user).values_list("recipe_id", flat=True)
+        )
+
     context = {
         "no_selection": False,
         "selected_ingredients": selected_ingredients,
@@ -93,6 +101,7 @@ def recipe_results(request):
         "max_minutes": max_minutes,
         "category": category,
         "categories": Category.objects.order_by("order", "name"),
+        "favorite_recipe_ids": favorite_recipe_ids,
     }
     return render(request, "recipes/results.html", context)
 
@@ -128,12 +137,17 @@ def recipe_detail(request, slug):
         if not row["have"] and not row["is_optional"]
     ]
 
+    is_favorited = False
+    if request.user.is_authenticated:
+        is_favorited = Favorite.objects.filter(user=request.user, recipe=recipe).exists()
+
     context = {
         "recipe": recipe,
         "ingredient_rows": ingredient_rows,
         "missing_items": missing_items,
         "allergens": recipe.allergens,
         "m_param": ",".join(slugs),
+        "is_favorited": is_favorited,
     }
     return render(request, "recipes/detail.html", context)
 

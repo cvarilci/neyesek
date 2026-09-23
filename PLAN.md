@@ -221,14 +221,14 @@ mobil/masaüstü kontrollerini nasıl yaptığını yaz. Commit'le ve push et (C
 | `ShoppingItem` | `user`, `ingredient` (opsiyonel FK), `text`, `is_checked`, `created_at` |
 
 ### Görevler
-- [ ] `django-allauth`: e-posta ile giriş (kullanıcı adı yok), şifre sıfırlama. Kayıt formuna **ad** alanı eklenir (Django `User.first_name`), Google ile giriş **yok**.
-- [ ] Geliştirmede e-postalar konsola yazılsın; gerçek e-posta servisi sonra eklenecek
-- [ ] Giriş, kayıt ve şifre sıfırlama şablonları tasarım diline uygun ve Türkçe
-- [ ] Giriş yapınca `localStorage` içindeki seçimler ve alışveriş listesi hesaba aktarılsın (bir kerelik birleştirme)
-- [ ] "Dolabımı kaydet" ve "Dolabımdan başla" butonları
-- [ ] Tarif kartında ve detayında favori (♥) butonu; `/favorilerim/` sayfası
-- [ ] Giriş yapan kullanıcıda alışveriş listesi veritabanından gelsin (POST + CSRF ile güncellenir)
-- [ ] Yetki testleri: bir kullanıcı başka birinin favori veya liste öğesine erişemiyor ve onu silemiyor
+- [x] `django-allauth`: e-posta ile giriş (kullanıcı adı yok), şifre sıfırlama. Kayıt formuna **ad** alanı eklenir (Django `User.first_name`), Google ile giriş **yok**.
+- [x] Geliştirmede e-postalar konsola yazılsın; gerçek e-posta servisi sonra eklenecek
+- [x] Giriş, kayıt ve şifre sıfırlama şablonları tasarım diline uygun ve Türkçe
+- [x] Giriş yapınca `localStorage` içindeki seçimler ve alışveriş listesi hesaba aktarılsın (bir kerelik birleştirme)
+- [x] "Dolabımı kaydet" ve "Dolabımdan başla" butonları
+- [x] Tarif kartında ve detayında favori (♥) butonu; `/favorilerim/` sayfası
+- [x] Giriş yapan kullanıcıda alışveriş listesi veritabanından gelsin (POST + CSRF ile güncellenir)
+- [x] Yetki testleri: bir kullanıcı başka birinin favori veya liste öğesine erişemiyor ve onu silemiyor
 
 ### Kabul kriterleri
 - Üye olmadan Faz 2 ve 3'teki her şey aynen çalışıyor.
