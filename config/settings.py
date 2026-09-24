@@ -183,5 +183,35 @@ LOGIN_URL = "account_login"
 LOGIN_REDIRECT_URL = "recipes:home"
 ACCOUNT_LOGOUT_REDIRECT_URL = "recipes:home"
 
+# Giriş denemelerinde ve hassas allauth uç noktalarında hız sınırı.
+# Ayarlanmazsa ACCOUNT_RATE_LIMITS varsayılanı boş sözlüktür, yani sınırsız
+# deneme yapılabilir — Faz 5 güvenlik gözden geçirmesiyle bilinçli olarak eklendi.
+ACCOUNT_RATE_LIMITS = {
+    "login": "30/m/ip",
+    "login_failed": "10/m/ip,5/5m/key",
+    "signup": "20/m/ip",
+    "reset_password": "20/m/ip,5/m/key",
+    "reset_password_from_key": "20/m/ip",
+    "change_password": "5/m/user",
+    "manage_email": "10/m/user",
+    "confirm_email": "1/3m/key",
+}
+
 # Geliştirmede gerçek e-posta servisi yok; e-postalar konsola yazılır.
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+
+# Üretim güvenlik başlıkları — yalnızca DEBUG=False iken etkin.
+# Vercel (ve çoğu ters proxy) isteği HTTPS olarak karşılayıp uygulamaya HTTP
+# olarak iletir; SECURE_PROXY_SSL_HEADER olmadan SECURE_SSL_REDIRECT sonsuz
+# yönlendirme döngüsüne girer.
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_SECONDS = 60 * 60 * 24 * 7  # 1 hafta; sorun çıkmazsa artırılabilir
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
