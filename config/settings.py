@@ -183,6 +183,20 @@ LOGIN_URL = "account_login"
 LOGIN_REDIRECT_URL = "recipes:home"
 ACCOUNT_LOGOUT_REDIRECT_URL = "recipes:home"
 
+# allauth'un hız sınırlama sayaçları Django'nun cache framework'ünü kullanır.
+# CACHES tanımlanmazsa varsayılan LocMemCache devreye girer; bu, tek bir Python
+# sürecine özeldir ve Vercel'in sunucusuz (serverless) ortamındaki birden fazla
+# fonksiyon örneği arasında PAYLAŞILMAZ — yani ACCOUNT_RATE_LIMITS sessizce
+# etkisiz kalabilir. Yeni bir bağımlılık eklemeden paylaşılan bir önbellek için
+# veritabanı tabanlı cache kullanılıyor (Supabase Postgres, yerelde SQLite).
+# Tabloyu oluşturmak için: python manage.py createcachetable
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+        "LOCATION": "django_cache_table",
+    }
+}
+
 # Giriş denemelerinde ve hassas allauth uç noktalarında hız sınırı.
 # Ayarlanmazsa ACCOUNT_RATE_LIMITS varsayılanı boş sözlüktür, yani sınırsız
 # deneme yapılabilir — Faz 5 güvenlik gözden geçirmesiyle bilinçli olarak eklendi.

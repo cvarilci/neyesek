@@ -50,13 +50,20 @@ Proje kuralları için [`CLAUDE.md`](CLAUDE.md), fazlar ve kabul kriterleri içi
    python manage.py migrate
    ```
 
-5. Alerjen, malzeme grubu, kategori, malzeme ve tarif seed verisini yükle (tekrar çalıştırılırsa kayıt çoğaltmaz):
+5. Hız sınırlama (`ACCOUNT_RATE_LIMITS`) sayaçlarının tutulduğu önbellek tablosunu oluştur
+   (yalnızca bir kere; `migrate` bunu otomatik yapmaz):
+
+   ```bash
+   python manage.py createcachetable
+   ```
+
+6. Alerjen, malzeme grubu, kategori, malzeme ve tarif seed verisini yükle (tekrar çalıştırılırsa kayıt çoğaltmaz):
 
    ```bash
    python manage.py seed_recipes
    ```
 
-6. Geliştirme sunucusunu başlat:
+7. Geliştirme sunucusunu başlat:
 
    ```bash
    python manage.py runserver
@@ -64,7 +71,7 @@ Proje kuralları için [`CLAUDE.md`](CLAUDE.md), fazlar ve kabul kriterleri içi
 
    Tarayıcıda [http://127.0.0.1:8000](http://127.0.0.1:8000) adresini aç.
 
-7. Admin panelinde çalışmak için yönetici kullanıcı oluştur:
+8. Admin panelinde çalışmak için yönetici kullanıcı oluştur:
 
    ```bash
    python manage.py createsuperuser
@@ -118,12 +125,17 @@ CDN'inden sunulur).
    > dosyasını içe aktarır. `SECRET_KEY` eksikse ilk deploy build aşamasında hemen hata verir.
    > Bu yüzden env değişkenlerini deploy'dan **önce** girmiş olmak gerekir.
 
-3. **Veritabanını yerelden hazırla** (Vercel'de migration çalışmaz):
+3. **Veritabanını yerelden hazırla** (Vercel'de migration çalışmaz — `DATABASE_URL`'in
+   `.env`'de Supabase'e işaret ettiğinden emin ol):
 
    ```bash
    python manage.py migrate
+   python manage.py createcachetable
    python manage.py seed_recipes
    ```
+
+   `createcachetable` çalıştırılmazsa giriş/kayıt/şifre sıfırlama sayfaları (hız
+   sınırlama tablosu yok diye) `500` hatası verir — atlama.
 
 4. **Deploy et**: Vercel projesini GitHub reposuna bağladıktan sonra `main` dalına her
    `git push` otomatik yeni bir production deploy'u tetikler. İlk deploy'u panelden de
