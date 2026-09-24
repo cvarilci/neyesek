@@ -25,11 +25,17 @@ def json_login_required(view_func):
 
 
 def _parse_json_body(request):
+    """Gövdeyi JSON olarak ayrıştırır; bozuksa veya dict değilse None döner.
+
+    None ile boş-ama-geçerli bir {} karıştırılmamalı: çağıranlar None'ı hatalı
+    istek (400) olarak ele almalı, aksi hâlde bozuk gövde "hiç değişiklik yok"
+    yerine "her şeyi sil" olarak yorumlanabilir (bkz. pantry_save).
+    """
     try:
         data = json.loads(request.body.decode("utf-8"))
     except (ValueError, UnicodeDecodeError):
-        return {}
-    return data if isinstance(data, dict) else {}
+        return None
+    return data if isinstance(data, dict) else None
 
 
 def favorites_list(request):
@@ -64,6 +70,8 @@ def favorite_toggle(request, recipe_slug):
 @require_POST
 def pantry_save(request):
     data = _parse_json_body(request)
+    if data is None:
+        return JsonResponse({"error": "Geçersiz veri."}, status=400)
     slugs = data.get("slugs", [])
     if not isinstance(slugs, list):
         return JsonResponse({"error": "Geçersiz veri."}, status=400)
@@ -121,6 +129,8 @@ def _add_shopping_items(user, raw_items):
 @require_POST
 def shopping_list_add(request):
     data = _parse_json_body(request)
+    if data is None:
+        return JsonResponse({"error": "Geçersiz veri."}, status=400)
     items = data.get("items", [])
     if not isinstance(items, list):
         return JsonResponse({"error": "Geçersiz veri."}, status=400)
@@ -157,6 +167,8 @@ def shopping_list_clear(request):
 def merge_local_data(request):
     """Girişten hemen sonra, tarayıcıdaki localStorage verisini hesaba bir kerelik aktarır."""
     data = _parse_json_body(request)
+    if data is None:
+        return JsonResponse({"error": "Geçersiz veri."}, status=400)
 
     selected = data.get("selected", [])
     if isinstance(selected, list):

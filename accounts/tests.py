@@ -158,6 +158,19 @@ class AccountFeatureTests(TestCase):
         )
         self.assertEqual(response.status_code, 200)  # çökmemeli, sadece eşleşen 0 malzeme kaydedilir
 
+    def test_pantry_save_rejects_malformed_json_without_wiping_pantry(self):
+        pantry = Pantry.objects.create(user=self.user)
+        pantry.ingredients.add(self.domates)
+
+        response = self.client.post(
+            reverse("accounts:pantry_save"),
+            data=b'{"slugs": [oops malformed',
+            content_type="application/json",
+        )
+        self.assertEqual(response.status_code, 400)
+        pantry.refresh_from_db()
+        self.assertEqual(set(pantry.ingredients.values_list("slug", flat=True)), {"domates"})
+
     # ---- Favoriler ----
 
     def test_favorite_toggle_creates_and_removes(self):
