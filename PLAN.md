@@ -251,15 +251,15 @@ ve bunun için yetki testleri yaz. Commit'le ve push et (CLAUDE.md → Git akı�
 **Amaç:** Uygulamayı güvenli bir üretim ayarıyla Vercel'e çıkarmak (ilk aşamada `*.vercel.app` adresiyle, domain almadan).
 
 ### Görevler
-- [ ] Kapsamlı güvenlik ve doğruluk incelemesi: `CLAUDE.md` güvenlik kuralları, `python manage.py check --deploy` çıktısı, bağımlılık sürümleri. Bulgular önem sırasıyla raporlanır ve düzeltilir.
-- [ ] Üretim ayarları: `DEBUG=False`, güvenlik başlıkları, HSTS, güvenli cookie'ler
-- [ ] Giriş denemelerinde hız sınırı (allauth'un yerleşik `ACCOUNT_RATE_LIMITS` ayarı)
-- [ ] Vercel yapılandırması: `vercel.json`, WSGI giriş noktası, statik dosyaların (`collectstatic` + WhiteNoise) sunulması. **Vercel'in güncel Python/Django belgelerini kontrol ederek** yapılandır.
-- [ ] Vercel projesini GitHub'daki `cvarilci/neyesek` reposuna bağlama talimatı (her `main` push'u otomatik yayına çıkar)
-- [ ] `ALLOWED_HOSTS` ve `CSRF_TRUSTED_ORIGINS` değişkenlerine Vercel adresini ekle
-- [ ] Google OAuth yönlendirme adresine üretim adresini ekleme talimatı
-- [ ] `README.md` içine yayın adımları: Vercel ortam değişkenleri, migration'ın yerelden çalıştırılması, seed verisi
-- [ ] Yayından sonra kontrol listesi: ana akış, giriş, statik dosyalar, 404 sayfası, `/admin` erişimi
+- [x] Kapsamlı güvenlik ve doğruluk incelemesi: `CLAUDE.md` güvenlik kuralları, `python manage.py check --deploy` çıktısı, bağımlılık sürümleri. Bulgular önem sırasıyla raporlanır ve düzeltilir.
+- [x] Üretim ayarları: `DEBUG=False`, güvenlik başlıkları, HSTS, güvenli cookie'ler
+- [x] Giriş denemelerinde hız sınırı (allauth'un yerleşik `ACCOUNT_RATE_LIMITS` ayarı)
+- [x] Vercel yapılandırması: `vercel.json`, WSGI giriş noktası, statik dosyaların (`collectstatic` + WhiteNoise) sunulması. **Vercel'in güncel Python/Django belgelerini kontrol ederek** yapılandır.
+- [x] Vercel projesini GitHub'daki `cvarilci/neyesek` reposuna bağlama talimatı (her `main` push'u otomatik yayına çıkar)
+- [x] `ALLOWED_HOSTS` ve `CSRF_TRUSTED_ORIGINS` değişkenlerine Vercel adresini ekle
+- [x] ~~Google OAuth yönlendirme adresine üretim adresini ekleme talimatı~~ — Google ile giriş Faz 4'te kapsam dışı bırakıldı (bkz. "Sonraki fikirler"), bu görev artık geçersiz.
+- [x] `README.md` içine yayın adımları: Vercel ortam değişkenleri, migration'ın yerelden çalıştırılması, seed verisi
+- [x] Yayından sonra kontrol listesi: ana akış, giriş, statik dosyalar, 404 sayfası, `/admin` erişimi
 
 ### Kabul kriterleri
 - `python manage.py check --deploy` kritik uyarı vermiyor.
