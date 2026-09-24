@@ -71,6 +71,9 @@ class ShoppingItem(models.Model):
         verbose_name = "Alışveriş Öğesi"
         verbose_name_plural = "Alışveriş Öğeleri"
         ordering = ["created_at"]
+        constraints = [
+            models.UniqueConstraint(fields=["user", "text"], name="unique_user_shopping_text")
+        ]
 
     def __str__(self):
         return self.text

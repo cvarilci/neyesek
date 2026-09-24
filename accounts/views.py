@@ -104,24 +104,26 @@ def shopping_list_data(request):
 
 
 def _add_shopping_items(user, raw_items):
-    existing = ShoppingItem.objects.filter(user=user)
-    existing_texts = set(existing.values_list("text", flat=True))
-
+    # get_or_create + veritabanı seviyesindeki unique_user_shopping_text kısıtlaması
+    # (bkz. ShoppingItem.Meta) tekilleştirmeyi eşzamanlı isteklerde de garanti eder;
+    # yalnızca bellekte tutulan bir küme yarış durumunda aynı öğeyi iki kez oluşturabilirdi.
     added = 0
     for raw in raw_items[:MAX_ITEMS]:
         if not isinstance(raw, dict):
             continue
         name = str(raw.get("name", "")).strip()[:100]
-        if not name or name in existing_texts:
+        if not name:
             continue
         slug = str(raw.get("slug", "")).strip()
         ingredient = Ingredient.objects.filter(slug=slug).first() if slug else None
         is_checked = bool(raw.get("checked", False))
-        ShoppingItem.objects.create(
-            user=user, ingredient=ingredient, text=name, is_checked=is_checked
+        _, created = ShoppingItem.objects.get_or_create(
+            user=user,
+            text=name,
+            defaults={"ingredient": ingredient, "is_checked": is_checked},
         )
-        existing_texts.add(name)
-        added += 1
+        if created:
+            added += 1
     return added
 
 

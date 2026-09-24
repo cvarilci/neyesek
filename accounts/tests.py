@@ -2,6 +2,7 @@ import json
 
 from django.contrib.auth import get_user_model
 from django.core import mail
+from django.db import IntegrityError, transaction
 from django.test import TestCase
 from django.urls import reverse
 
@@ -212,6 +213,18 @@ class AccountFeatureTests(TestCase):
         self.client.post(url, data=json.dumps(payload), content_type="application/json")
         self.client.post(url, data=json.dumps(payload), content_type="application/json")
         self.assertEqual(ShoppingItem.objects.filter(user=self.user).count(), 1)
+
+    def test_shopping_item_unique_constraint_prevents_duplicates_at_db_level(self):
+        """Tekilleştirme artık yalnızca uygulama koduna değil, veritabanı kısıtlamasına
+        da dayanıyor; bu da eşzamanlı isteklerde bile aynı öğenin iki kez
+        oluşturulamamasını garanti eder (önceki 'oku, kontrol et, oluştur' deseni
+        yarış durumuna açıktı)."""
+        ShoppingItem.objects.create(user=self.user, text="Domates")
+        with self.assertRaises(IntegrityError):
+            with transaction.atomic():
+                ShoppingItem.objects.create(user=self.user, text="Domates")
+        # Farklı kullanıcı aynı metni kullanabilmeli, kısıtlama kullanıcıya özel.
+        ShoppingItem.objects.create(user=self.other_user, text="Domates")
 
     def test_shopping_list_toggle_and_delete(self):
         item = ShoppingItem.objects.create(user=self.user, text="Domates")
